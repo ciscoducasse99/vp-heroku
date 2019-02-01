@@ -1,0 +1,32 @@
+//GLOBAL STYLESHEET
+$vp-primary: #0e0e0e;
+$vp-secondary: #191919;
+$vp-secondary-darkgrey:#1a1a1a;
+$vp-secondary-lightgrey:#262626;
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+.vp-rounded{
+    border-radius: 30px;
+}
+
+.vp-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+  }
+
+  .vp-pri-bg{
+    background: $vp-primary;
+  }
+  .vp-sec-bg{
+      background:$vp-secondary;
+  }
+
+  .vp-sec-text{
+      color:$vp-secondary;
+  }
+
+  

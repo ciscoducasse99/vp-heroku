@@ -1,0 +1,44 @@
+
+#vp-masthead {
+    background-size: cover;
+    background-attachment: fixed;
+    background:url('/static/images/code.jpeg') no-repeat;
+    min-height:60vh;
+    color: white;
+
+    .dark-overlay {
+      background-color: rgba(0, 0, 0, 0.9);
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height:60vh; 
+
+      
+
+    }
+}
+
+#main-section{
+  border-top: 1px solid white;
+  background:black;
+  color:whitesmoke;
+
+  .card{
+    background:#262626;
+  }
+}
+
+#meet-via-section{
+  min-height:50vh;
+  position: relative;
+  background:black;
+  color:white;
+
+  #mvs-content{
+    position:absolute;
+    width:100%;
+    top:50%;
+    transform:translateY(-50%);
+  }
+}

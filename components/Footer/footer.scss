@@ -1,0 +1,49 @@
+footer {
+    position: relative;
+    clear: both;
+    width: 100%;
+    background-color: #080808;
+    color: #ccc;
+}
+
+
+li{
+        color:white;
+    }
+
+    #legal{
+        font-size: 11px;
+    }
+
+    .scrollmenu {
+        height:44px;
+        background-color:#080808;//#0e1112;
+        overflow-x:scroll;
+        white-space:nowrap; 
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        
+    }
+    
+    .scrollmenu a {
+        display: inline-block;
+        color:#999;
+        text-align: center;
+        font-size: 14px;
+        padding:11px 20px;
+        text-decoration: none;
+    }
+    
+    .scrollmenu a:hover {
+        color: #ccc;
+    }
+    
+    .scrollmenu::-webkit-scrollbar{
+        display:none;
+    }
+    a{
+        color:white;
+    }
+    a:hover{
+        color:#ccc;
+    }

@@ -1,0 +1,16 @@
+nav{
+    background-color:#080808;
+
+    a:hover{
+        cursor:pointer;
+        color:white;
+    }
+}
+
+@media screen and (max-width: 476px) {
+   
+    a.lead{
+        font-size:18px;
+    }
+  
+}

@@ -1,0 +1,63 @@
+body{
+    overflow-x:hidden;
+}
+#Main_Page{
+
+    background-color: black;
+    color:white;
+    width:100%;
+    min-height:95vh;
+
+    h6{
+        font-size:14px;
+    }
+
+    #page-header{
+
+        
+
+        p{
+            font-family:'Roboto';
+            font-size: 18px;
+        }
+
+        .btn-black{
+            background:black;
+            color:white;
+            border: 1px solid white;
+
+            
+        }
+        .btn-black:hover{
+            background:rgb(12, 12, 12);
+            cursor:pointer;
+        }
+
+        .btn-white{
+            background:white;
+            color:black;
+        }
+        .btn-white:hover{
+            background:whitesmoke;
+            border: 1px solid white;
+            cursor:pointer;
+        }
+
+        p{
+            font-size:20px;
+        }
+    }
+
+    @media only screen and (max-width: 476px) {
+        #page-header{
+           
+            h1{
+                font-size:46px;
+            }
+
+            p{
+                font-size:18px;
+            }
+        }
+    }
+}
