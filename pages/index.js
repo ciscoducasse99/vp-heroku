@@ -18,7 +18,7 @@ const INDEX = () => (
         <div id="Main_Page">
         <div className="container">
         </div>
-            <div className="mt-5 py-2" id="page-header">
+            <div className="py-2" id="page-header">
                 <div className="text-center">
                     <h1 className="display-2 lead mb-5"><strong>Introducing Via</strong></h1>
                     <Sphere/>
@@ -31,6 +31,7 @@ const INDEX = () => (
                             <Link href="/meetvia"><a className="btn btn-white vp-rounded mx-2 font-weight-bold px-5 py-2">Meet Via</a></Link>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

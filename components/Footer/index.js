@@ -42,7 +42,7 @@ const Footer = () => (
                     <Link href="/designs"><a>Designs</a></Link>
                     <Link href="/faq"><a>FAQ</a></Link>
                     <Link href="/websites"><a>Websites</a></Link>
-                    <Link href="https://www.snap.com/en-US/privacy/privacy-center/"><a>Privacy</a></Link>
+                    
                     <Link href="/privacy"><a>Privacy Policy</a></Link>
                     <Link href="/tos"><a>Term and Conditions</a></Link>
                 </div>

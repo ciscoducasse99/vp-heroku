@@ -9,7 +9,9 @@ const Privacy = () => (
         </Head>
 
         <div id="page-content">
+       
             <div className="text-center">
+            <a href="https://www.snap.com/en-US/privacy/privacy-center/" target="_blank">Snapchat's Privacy page Design</a>
                 <div className="py-3">
                     <h1 className="mb-0">Privacy Policy</h1>
                     <p>Effective date: January 18, 2019</p>
