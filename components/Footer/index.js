@@ -36,6 +36,7 @@ const Footer = () => (
                     </a>
                 </div>
             </div>
+        </div>
 
             <div className="container mt-2">
                 <div className="text-center scrollmenu">
@@ -65,7 +66,6 @@ const Footer = () => (
                     </div>
                 </div>
             </div>
-        </div>
 
   <div className="modal fade" id="myModal">
     <div className="modal-dialog modal-dialog-centered">

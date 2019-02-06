@@ -3,8 +3,8 @@ import "./Navbar.scss";
 
 const NAVBAR = () => (
     <nav className="navbar">
-      <div className="ml-md-auto mx-auto">
-        <Link href="/"><a className="navbar-brand lead">The Vision Project</a></Link>
+      <div className="">
+        <Link href="/"><a className="navbar-brand lead d-flex justify-content-center justify-content-sm-start m-0">The Vision Project</a></Link>
       </div>
   </nav>
 );

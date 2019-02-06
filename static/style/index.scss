@@ -14,6 +14,8 @@ body{
         font-size:14px;
     }
 
+    
+
     #page-header{
         position:absolute;
         width:100%;
@@ -50,6 +52,15 @@ body{
         p{
             font-size:20px;
         }
+
+        #instuction{
+            color:#a2adaf;
+            font-size: 10px;
+      
+            a{
+              color:white;
+            }
+          }
     }
 
     @media only screen and (max-width: 476px) {
