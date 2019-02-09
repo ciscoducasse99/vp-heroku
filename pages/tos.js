@@ -15,7 +15,7 @@ const TOS = () => (
                     <p>Last updated: January 18, 2019</p>
                 </div>
 
-                <div className="legal-scrollmenu mb-4">
+                <div className="legal-scrollmenu ">
                     <a className="border vp-rounded mr-1" href="#ltos">Links to Other Sites</a>
                     <a className="border vp-rounded mr-1" href="#gl">Governing Laws</a>
                     <a className="border vp-rounded mr-1" href="#changes">Changes</a>

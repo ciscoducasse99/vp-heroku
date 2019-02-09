@@ -18,9 +18,9 @@ const INDEX = () => (
         <div id="Main_Page">
         <div className="container">
         </div>
-            <div className="py-2" id="page-header">
+            <div id="page-header">
                 <div className="text-center">
-                    <h1 className="display-4 lead mb-5"><strong>Introducing Via</strong></h1>
+                    <h1 className="display-4 lead mb-5"><strong>Meet Via.</strong></h1>
                     <Sphere/>
                     {/* <p className="lead col-sm-7 mx-auto ">
                         Meet Via to take the next step with getting your free website.<br/> Always free. All the time.
@@ -36,7 +36,12 @@ const INDEX = () => (
                             </p>
                         </div>
                     </div> */}
-                    <Link href="/websites"><a className="btn btn-white vp-rounded">Learn more</a></Link>
+                    <Link href="/websites"><a className="btn btn-white vp-rounded font-weight-bold">Learn more</a></Link>
+                    <p className="mt-4 col-8 col-lg-3 mx-auto" id="instuction">
+                                By continuing, you agree to our
+                                <Link href="tos"><a> terms and conditions </a></Link> and <Link href="/privacy"><a> privacy policy </a></Link>. We
+                                won't send you annoying information, just looking to help.
+                            </p>
                 </div>
             </div>
         </div>
