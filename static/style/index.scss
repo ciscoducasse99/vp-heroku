@@ -2,6 +2,9 @@ body{
     overflow-x:hidden;
     background-color: #050505;
 }
+.navbar{
+    display:none;
+}
 #Main_Page{
 
     background-color:#050505;
@@ -67,7 +70,7 @@ body{
         #page-header{
            
             h1{
-                font-size:46px;
+                font-size:48px;
             }
 
             p{

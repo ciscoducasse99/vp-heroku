@@ -40,26 +40,27 @@ const Footer = () => (
 
             <div className="container mt-2">
                 <div className="text-center scrollmenu">
-                    <Link href="/designs"><a>Designs</a></Link>
                     <Link href="/faq"><a>FAQ</a></Link>
                     <Link href="/websites"><a>Websites</a></Link>
-                    
                     <Link href="/privacy"><a>Privacy Policy</a></Link>
                     <Link href="/tos"><a>Term and Conditions</a></Link>
                 </div>
                 <div >
-                    <div className="row mt-2">
+                    <div className="row mt-2 ml-c">
                         <p className="mr-auto">Made with <span>&hearts;</span> by <a href="https://www.instagram.com/kingducasse/" target="_blank">Cisco</a></p>
 
                         <style jsx>{`
                             p{
-                                font-size:14px;
+                                font-size:12px;
                             }
                             span{
                                 color:#0076ff;
                             }
                             a:hover{
                                 text-decoration:none;
+                            }
+                            .ml-c{
+                                margin-left:.05rem !important;
                             }
                         `}</style>
 
