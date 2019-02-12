@@ -15,13 +15,15 @@ const INDEX = () => (
             <link rel="stylesheet" href="/_next/static/style.css" />
         </Head>
 
-        <div id="Main_Page">
-        <div className="container">
-        </div>
+        <div id="main-section">
+            <div className="container">
+            </div>
             <div id="page-header">
                 <div className="text-center">
-                    <h1 className="display-4 lead mb-5"><strong>Meet Via.</strong></h1>
-                    <Sphere/>
+                
+                    <h1 className="display-4 lead"><strong>Meet Via.</strong></h1>
+                    <p className="col-7 col-xl-5 mb-5 mx-auto" id="p-desc">Express yourself with creative camera tools and effects and easily share your photos and videos with friends.</p>
+                    <Sphere />
                     {/* <p className="lead col-sm-7 mx-auto ">
                         Meet Via to take the next step with getting your free website.<br/> Always free. All the time.
                     </p>
@@ -36,16 +38,18 @@ const INDEX = () => (
                             </p>
                         </div>
                     </div> */}
-                    <Link href="/websites"><a className="btn btn-white vp-rounded font-weight-bold">Learn more</a></Link>
+                    <Link href="/websites"><a className="btn btn-white vp-rounded font-weight-bold py-2 px-5 mb-2">Meet Via</a></Link><br/>
+                    <a href="">Learn more</a>
+
                     <p className="mt-4 col-8 col-lg-3 mx-auto" id="instuction">
-                                By continuing, you agree to our
-                                <Link href="tos"><a> terms and conditions </a></Link> and <Link href="/privacy"><a> privacy policy </a></Link>. We
-                                won't send you annoying information, just looking to help.
-                            </p>
+                        By continuing, you agree to our<Link href="tos"><a> terms and conditions </a></Link> and <Link href="/privacy"><a> privacy policy </a></Link>. We won't send you annoying information, just looking to help.
+                    </p>
                 </div>
             </div>
         </div>
+
     </Layout>
+
 );
 
 export default INDEX;

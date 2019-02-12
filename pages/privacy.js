@@ -11,7 +11,7 @@ const Privacy = () => (
         <div id="page-content">
        
             <div className="text-center">
-                <div className="py-3">
+                <div className="pt-3">
                     <h1 className="mb-0">Privacy Policy</h1>
                     <p>Effective date: January 18, 2019</p>
                 </div>
@@ -30,7 +30,7 @@ const Privacy = () => (
                     <a className="border vp-rounded mx-1" href="#con-us">Contact</a>
                 </div>
             </div>
-            <div className="container py-3">
+            <div className="container pb-3">
 
                 <p>The Vision Project ("us", "we", or "our") operates the www.thevisionproject.com website (hereinafter referred to as the "Service").</p>
                 <p>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. The Privacy Policy  for The Vision Project is based on the<a href="https://termsfeed.com/blog/sample-privacy-policy-template/" target="_blank">TermsFeed's Privacy Policy Template</a>.</p>

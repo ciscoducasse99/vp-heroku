@@ -9,7 +9,7 @@ const WebDev = () => (
             <title>Web Development | Vision Project</title>
         </Head>
 
-        <div id="vp-masthead" className="m-3">
+        <div id="vp-masthead" className="m-2">
             <div className="dark-overlay">
                 <div className="container">
                     <div className="py-5" id="vp-masthead-content">
