@@ -1,25 +1,98 @@
+// body{
+//     background-color: #0e1112;
+// }
+
+// #main-section{
+//     background-color:#050505;
+//     position: relative;
+//     color:white;
+//     width:100%;
+//     min-height:105vh;
+
+//     h6{
+//         font-size:14px;
+//     }
+    
+//     #page-header{
+//         position:absolute;
+//         width:100%;
+//         top:50%;
+//         transform:translateY(-50%);
+        
+//         p{
+//             font-family:'Roboto';
+//             font-size: 18px;
+//         }
+
+//         .btn-black{
+//             background:#050505;
+//             color:white;
+//             border: 1px solid white;
+
+            
+//         }
+//         .btn-black:hover{
+//             background:rgb(12, 12, 12);
+//             cursor:pointer;
+//         }
+
+//         .btn-white{
+//             background:white;
+//             color:black;
+//         }
+//         .btn-white:hover{
+//             background:whitesmoke;
+//             border: 1px solid white;
+//             cursor:pointer;
+//         }
+
+//         p{
+//             font-size:20px;
+//         }
+
+//         #instuction{
+//             color:#a2adaf;
+//             font-size: 10px;
+      
+//             a{
+//               color:white;
+//             }
+//           }
+//     }
+
+//     @media only screen and (max-width: 486px) {
+//         #page-header{
+
+//             #p-desc{
+//                 font-size:16px;
+//             }
+           
+//             h1{
+//                 font-size:52px;
+//             }
+
+//             p{
+//                 font-size:18px;
+//             }
+//         }
+//     }
+// }
+
 body{
     background-color: #0e1112;
 }
-.navbar{
-    display:none;
-}
-#main-section{
-    background-color:#050505;
-    position: relative;
+
+#home-main-section{
+    background-color:black;
     color:white;
     width:100%;
-    min-height:105vh;
+    min-height:95vh;
 
     h6{
         font-size:14px;
     }
     
-    #page-header{
-        position:absolute;
-        width:100%;
-        top:50%;
-        transform:translateY(-50%);
+    #home-page-header{
         
         p{
             font-family:'Roboto';
@@ -63,10 +136,10 @@ body{
     }
 
     @media only screen and (max-width: 486px) {
-        #page-header{
+        #home-page-header{
 
             #p-desc{
-                font-size:16px;
+                font-size:14px;
             }
            
             h1{

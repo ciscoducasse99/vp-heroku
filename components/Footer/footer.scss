@@ -1,8 +1,10 @@
+$vp-footer-color:#131313;
+
 footer {
     position: relative;
     clear: both;
     width: 100%;
-    background-color: #0e1112;
+    background-color: $vp-footer-color;
     color: #ccc;
 }
 
@@ -17,7 +19,7 @@ li{
 
     .scrollmenu {
         height:44px;
-        background-color:#0e1112;//#080808;
+        background-color:$vp-footer-color;//#080808;
         overflow-x:scroll;
         white-space:nowrap; 
         -webkit-overflow-scrolling: touch;

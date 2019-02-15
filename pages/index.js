@@ -15,11 +15,9 @@ const INDEX = () => (
             <link rel="stylesheet" href="/_next/static/style.css" />
         </Head>
 
-        <div id="main-section">
-            <div className="container">
-            </div>
-            <div id="page-header">
-                <div className="text-center">
+        <div id="home-main-section" className="pt-4">
+            <div id="home-page-header" className="pb-4 pb-sm-0">
+                <div className="text-center p-0">
                 
                     <h1 className="display-4 lead"><strong>Meet Via.</strong></h1>
                     <p className="col-7 col-xl-5 mb-5 mx-auto" id="p-desc">Express yourself with creative camera tools and effects and easily share your photos and videos with friends.</p>

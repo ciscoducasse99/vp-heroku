@@ -128,34 +128,16 @@ const WebDev = () => (
 
         <div id="meet-via-section">
             <div id="mvs-content">
-                <div className="my-4 text-light">
+                <div className="text-light">
                     <div className="container">
                         <div className="text-center">
                             <h4 className="display-4">Meet Via</h4>
-                            <p className="mt-3 lead">
+                            <p className="my-3 lead">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae non quidem impedit omnis quis deserunt aut, laboriosam id natus saepe laborum pariatur ipsam! Voluptatum, provident blanditiis. Provident, error repellat?
                             </p>
                             <Link href="/meetvia">
-                                <a className="btn vp-rounded btn-secondary px-4 py-2 font-weight-bold">Meet Via</a>
+                                <a className="btn vp-rounded btn-secondary px-4 font-weight-bold">Meet Via</a>
                             </Link>
-
-                            <style jsx>{`
-
-                                p{
-                                    color:grey;
-                                }
-
-                                a{
-                                    background:white;
-                                    border:1px solid white;
-                                    color:black;
-                                }
-
-                                a:hover{
-                                    background: #262626;
-                                    border:1px solid #262626;
-                                }
-                            `}</style>
                         </div>
                     </div>
                 </div>

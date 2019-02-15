@@ -20,7 +20,6 @@
 }
 
 #main-section{
-  border-top: 1px solid white;
   background:black;
   color:whitesmoke;
 
@@ -30,15 +29,31 @@
 }
 
 #meet-via-section{
-  min-height:50vh;
+  min-height:55vh;
   position: relative;
   background:black;
   color:white;
+
 
   #mvs-content{
     position:absolute;
     width:100%;
     top:50%;
     transform:translateY(-50%);
+    p{
+      color:grey;
+      font-size:18px;
+    }
+
+    a{
+        background:white;
+        border:1px solid white;
+        color:black;
+    }
+
+    a:hover{
+        background: #d4d4d4;
+        border:1px solid #d4d4d4;
+    }
   }
 }
