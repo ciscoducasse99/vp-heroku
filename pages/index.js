@@ -20,7 +20,7 @@ const INDEX = () => (
                 <div className="text-center p-0">
                 
                     <h1 className="display-4 lead"><strong>Meet Via.</strong></h1>
-                    <p className="col-7 col-xl-5 mb-5 mx-auto" id="p-desc">Express yourself with creative camera tools and effects and easily share your photos and videos with friends.</p>
+                    <p className="col-10 col-xl-5 mb-5 mx-auto" id="p-desc">Express yourself with creative camera tools and effects and easily share your photos and videos with friends.</p>
                     <Sphere />
                     {/* <p className="lead col-sm-7 mx-auto ">
                         Meet Via to take the next step with getting your free website.<br/> Always free. All the time.
@@ -36,7 +36,7 @@ const INDEX = () => (
                             </p>
                         </div>
                     </div> */}
-                    <Link href="/websites"><a className="btn btn-white vp-rounded font-weight-bold py-2 px-5 mb-2">Meet Via</a></Link><br/>
+                    <Link href="/websites"><a className="btn btn-white vp-rounded font-weight-bold py-2 px-5 mb-3">Meet Via</a></Link><br/>
                     <a href="">Learn more</a>
 
                     <p className="mt-4 col-8 col-lg-3 mx-auto" id="instuction">
