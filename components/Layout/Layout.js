@@ -12,6 +12,7 @@ const LAYOUT = (props) =>(
             <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
             <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
             <link rel="shortcut icon" href="static/images/favicon.ico"/>
+            <link rel="manifest" href="/manifest.json"/>
         </Head>
         <Navbar/>
         <div >

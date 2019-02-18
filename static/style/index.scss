@@ -82,53 +82,22 @@
     background-color:black;
     color:white;
     width:100%;
-    min-height:95vh;
+    min-height:100vh;
+    display:table;
 
     h6{
         font-size:14px;
     }
     
     #home-page-header{
-        
+        display:table-cell;
+        vertical-align: middle;
         p{
             font-family:'Roboto';
             font-size: 18px;
+            color:grey;
         }
 
-        .btn-black{
-            background:#050505;
-            color:white;
-            border: 1px solid white;
-
-            
-        }
-        .btn-black:hover{
-            background:rgb(12, 12, 12);
-            cursor:pointer;
-        }
-
-        .btn-white{
-            background:white;
-            color:black;
-        }
-        .btn-white:hover{
-            background:whitesmoke;
-            border: 1px solid white;
-            cursor:pointer;
-        }
-
-        p{
-            font-size:20px;
-        }
-
-        #instuction{
-            color:#a2adaf;
-            font-size: 10px;
-      
-            a{
-              color:white;
-            }
-          }
     }
 
     @media only screen and (max-width: 486px) {
