@@ -1,4 +1,4 @@
-$vp-footer-color:#131313;
+$vp-footer-color:black;
 
 footer {
     position: relative;
@@ -6,6 +6,7 @@ footer {
     width: 100%;
     background-color: $vp-footer-color;
     color: #ccc;
+    border-top: 1px solid #131313;
 }
 
 
