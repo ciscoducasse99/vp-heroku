@@ -1,0 +1,14 @@
+{
+  "name": "The Vision Project",
+  "short_name": "Vision",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "static/images/favicon.ico",
+      "type": "image/ico"
+    }
+  ]
+}

@@ -12,7 +12,19 @@ const LAYOUT = (props) =>(
             <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
             <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
             <link rel="shortcut icon" href="static/images/favicon.ico"/>
-            <link rel="manifest" href="/manifest.json"/>
+            <link rel="manifest" href="manifest.json"/>
+            <meta name="mobile-web-app-capable" content="yes"/>
+            <meta name="apple-mobile-web-app-capable" content="yes"/>
+            <meta name="application-name" content="Vision"/>
+            <meta name="apple-mobile-web-app-title" content="Vision"/>
+            <meta name="theme-color" content="#000000"/>
+            <meta name="msapplication-navbutton-color" content="#000000"/>
+            <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+            <meta name="msapplication-starturl" content="/"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+            <link rel="icon" type="image/ico" href="static/images/favicon.ico"/>
+            <link rel="apple-touch-icon" type="image/ico" href="static/images/favicon.ico"/>
         </Head>
         <Navbar/>
         <div >
