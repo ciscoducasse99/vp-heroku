@@ -196,6 +196,7 @@ const steps = [
           return true;
         } else {
           return 'We can only work with zip codes in Lowell!'
+          //try to use an asMessage:true somewhere.
         }
       }
       
@@ -319,10 +320,10 @@ const steps = [
 const theme = {
   background: '#1a1a1a',
   fontFamily: 'Poppins',
-  headerBgColor: '#080808',
+  headerBgColor: '#040404',
   headerFontColor: 'whitesmoke',
   headerFontSize: '20px',
-  botBubbleColor: '#080808',
+  botBubbleColor: 'black',
   botFontColor: 'white',
   userBubbleColor: '#0086c5',
   userFontColor: 'white',
@@ -335,12 +336,18 @@ const SimpleForm = () => (
         <ThemeProvider theme={theme}>
           <ChatBot
             headerTitle='Via'
+            enableMobileAutoFocus='true'
+            
             hideUserAvatar='true'
             hideBotAvatar='true'
             width='650px'
             steps={steps}
             bubbleStyle={{
-              border:'none'
+
+            }}
+            bubbleOptionStyle={{
+              background:'#090909',
+              color:'white'
             }}
             floatingStyle={{
               left: 'calc(50% - 28px)',

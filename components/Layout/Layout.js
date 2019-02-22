@@ -11,7 +11,7 @@ const LAYOUT = (props) =>(
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
             <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
             <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
-            <link rel="shortcut icon" href="static/images/favicon.ico"/>
+
             <link rel="manifest" href="manifest.json"/>
             <meta name="mobile-web-app-capable" content="yes"/>
             <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -23,8 +23,8 @@ const LAYOUT = (props) =>(
             <meta name="msapplication-starturl" content="/"/>
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-            <link rel="icon" type="image/ico" href="static/images/favicon.ico"/>
-            <link rel="apple-touch-icon" type="image/ico" href="static/images/favicon.ico"/>
+            <link rel="shortcut icon" href="static/images/favicon.ico"/>
+            <link rel="apple-touch-icon" type="image/ico" href="static/images/favicon(1).ico"/>
         </Head>
         <Navbar/>
         <div >
