@@ -19,9 +19,8 @@ const LAYOUT = (props) =>(
             <meta name="apple-mobile-web-app-title" content="Vision"/>
             <meta name="theme-color" content="#000000"/>
             <meta name="msapplication-navbutton-color" content="#000000"/>
-            <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+            <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
             <meta name="msapplication-starturl" content="/"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/>
             <link rel="shortcut icon" href="static/images/favicon.ico"/>
             <link rel="apple-touch-icon" type="image/ico" href="static/images/favicon(1).ico"/>
         </Head>
