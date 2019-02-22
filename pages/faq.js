@@ -10,18 +10,17 @@ const Faq = () => (
         </Head>
         <div id="main">
             <div className="container">
-                <h6 className="text-right pt-4">Frequently Asked Questions</h6>
-                <div className="pb-2 text-center">
+                <div className="pb-1 text-center">
 
                     <div className="my-5 py-3">
                         <div className="mx-auto col-md-7">
-                            <h3 className="text-white">What's the point of this?</h3>
+                            <h4 className="text-white font-weight-bold">What's the point of this?</h4>
                             <p className="lead">We want to help everyone pursue their own journeys. We know how hard it can be to "take the leap" so we're trying to soften the start more. That means you get the services we can help with, and we can get the experience we need to continue.</p>
                         </div>
                     </div>
                     <div className="my-5">
                         <div className="mx-auto col-md-7">
-                            <h4>What does this site do?</h4>
+                            <h4 className="text-white font-weight-bold">What does this site do?</h4>
                             <p className="lead">All we can do for now is making websites for people, <span className="font-weight-bold">for free.</span> All you have to pay for is hosting, which someone can get in contact with you about.</p>
                         </div>
                     </div>
@@ -34,8 +33,8 @@ const Faq = () => (
                     </div>
                     <div className="my-5">
                         <div className="mx-auto col-md-7">
-                            <h4>Who is Vy?</h4>
-                            <p className="lead">Vy is a bot we developed to help us get in touch with you. We might not always to be able to get in direct contact, so Vy is the 'middle-person' in between us to make sure we do. She sends us information about whoever wants a site, so we can know who wants what.</p>
+                            <h4>Who is Via?</h4>
+                            <p className="lead">Via is a bot developed to help us get in touch with you. We might not always to be able to get in direct contact, so Vy is the 'middle-person' in between us to make sure we do. She sends us information about whoever wants a site, so we can know who wants what.</p>
                         </div>
                     </div>
                     <div className="my-5">

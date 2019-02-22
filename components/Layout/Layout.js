@@ -18,6 +18,7 @@ const LAYOUT = (props) =>(
             <meta name="application-name" content="Vision"/>
             <meta name="apple-mobile-web-app-title" content="Vision"/>
             <meta name="theme-color" content="#000000"/>
+            <meta name="background-color" content="#000000"/>
             <meta name="msapplication-navbutton-color" content="#000000"/>
             <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
             <meta name="msapplication-starturl" content="/"/>
