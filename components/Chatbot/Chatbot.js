@@ -320,7 +320,7 @@ const steps = [
 const theme = {
   background: '#1a1a1a',
   fontFamily: 'Poppins',
-  headerBgColor: '#040404',
+  headerBgColor: '#090909',
   headerFontColor: 'whitesmoke',
   headerFontSize: '20px',
   botBubbleColor: 'black',
@@ -337,7 +337,7 @@ const SimpleForm = () => (
           <ChatBot
             headerTitle='Via'
             enableMobileAutoFocus='true'
-            
+            floating='true'
             hideUserAvatar='true'
             hideBotAvatar='true'
             width='650px'
