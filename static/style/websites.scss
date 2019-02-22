@@ -1,9 +1,9 @@
+#webdev-page{
+  background:#080808;
 
-#vp-masthead {
+  #vp-masthead{
     background-size: cover;
-    background-attachment: fixed;
-    background:url('/static/images/code.jpeg') no-repeat;
-    min-height:60vh;
+    min-height:450px;
     color: white;
 
     .dark-overlay {
@@ -12,48 +12,52 @@
       top: 0;
       left: 0;
       width: 100%;
-      min-height:60vh; 
-
-      
-
+      min-height:450px; 
     }
-}
+  }
 
-#main-section{
-  background:black;
-  color:whitesmoke;
+  #main-section{
+    background:black;
+    color:whitesmoke;
 
-  .card{
-    background:#262626;
+    .card{
+      background:#262626;
+    }
+  }
+
+  #meet-via-section{
+    min-height:420px;
+    position: relative;
+    background:black;
+    color:white;
+
+
+    #mvs-content{
+      position:absolute;
+      width:100%;
+      top:50%;
+      transform:translateY(-50%);
+      p{
+        color:grey;
+        font-size:18px;
+      }
+
+      a{
+          background:white;
+          border:1px solid white;
+          color:black;
+      }
+
+      a:hover{
+          background: #d4d4d4;
+          border:1px solid #d4d4d4;
+      }
+    }
   }
 }
 
-#meet-via-section{
-  min-height:55vh;
-  position: relative;
-  background:black;
-  color:white;
-
-
-  #mvs-content{
-    position:absolute;
-    width:100%;
-    top:50%;
-    transform:translateY(-50%);
-    p{
-      color:grey;
-      font-size:18px;
-    }
-
-    a{
-        background:white;
-        border:1px solid white;
-        color:black;
-    }
-
-    a:hover{
-        background: #d4d4d4;
-        border:1px solid #d4d4d4;
-    }
+@media only screen and (max-width:486px){
+  h1{
+    font-size:22px;
   }
 }
