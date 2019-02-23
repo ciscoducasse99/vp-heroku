@@ -329,13 +329,15 @@ const theme = {
   userFontColor: 'white',
 };
 
-const SimpleForm = () => (
+const ViaBeta = () => (
   <div id="Vee">
     <div id="chatbot-content">
       <div className="container">
         <ThemeProvider theme={theme}>
           <ChatBot
             headerTitle='Via'
+            enableMobileAutoFocus='true'
+            floating='true'
             hideUserAvatar='true'
             hideBotAvatar='true'
             width='650px'
@@ -363,4 +365,4 @@ const SimpleForm = () => (
   </div>
 );
 
-export default SimpleForm;
+export default ViaBeta;

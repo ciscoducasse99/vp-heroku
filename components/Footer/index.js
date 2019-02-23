@@ -44,6 +44,7 @@ const Footer = () => (
                     <Link href="/websites"><a>Websites</a></Link>
                     <Link href="/privacy"><a>Privacy Policy</a></Link>
                     <Link href="/tos"><a>Term and Conditions</a></Link>
+                    <Link href="/via-beta"><a>Via Beta</a></Link>
                 </div>
                 <div >
                     <div className="row mt-2 ml-c">
