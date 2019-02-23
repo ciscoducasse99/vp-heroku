@@ -23,7 +23,7 @@ const LAYOUT = (props) =>(
             <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
             <meta name="msapplication-starturl" content="/"/>
             <link rel="shortcut icon" href="static/images/favicon.ico"/>
-            <link rel="apple-touch-icon" type="image/ico" href="static/images/favicon(1).ico"/>
+            <link rel="apple-touch-icon" type="image/png" href="static/images/vp-favicon.png"/>
             <link rel="apple-touch-startup-image" href="static/images/favicon.ico"/>
         </Head>
         <Navbar/>
