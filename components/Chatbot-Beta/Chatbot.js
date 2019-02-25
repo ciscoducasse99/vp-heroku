@@ -349,15 +349,6 @@ const ViaBeta = () => (
               background:'#090909',
               color:'white'
             }}
-            floatingStyle={{
-              left: 'calc(50% - 28px)',
-              right: 'initial',
-              transformOrigin: 'bottom center',
-              borderRadius: 15,
-            }}
-            style={{
-              left: 'calc(50% - 320px)'
-            }} 
           />
         </ThemeProvider>
       </div>
