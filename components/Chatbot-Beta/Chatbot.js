@@ -342,9 +342,6 @@ const ViaBeta = () => (
             hideBotAvatar='true'
             width='650px'
             steps={steps}
-            bubbleStyle={{
-
-            }}
             bubbleOptionStyle={{
               background:'#090909',
               color:'white'
