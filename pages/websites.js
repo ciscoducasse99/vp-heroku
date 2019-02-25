@@ -35,15 +35,15 @@ const WebDev = () => (
                 </div>
                 <div id="reasonings">
                     <div className="row">
-                        <div className="col-12 col-sm-4">
+                        <div className="col-12 col-sm-4 mb-3 mb-sm-0">
                             <h5 className="pb-1 font-weight-bold">We build on modern technologies</h5>
                             <p className="col-10 mx-auto">We work with modern technologies to insure we stay brushed up on our skills, and to make sure you stay updated in the present.</p>
                         </div>
-                        <div className="col-12 col-sm-4">
+                        <div className="col-12 col-sm-4 mb-sm-0">
                             <h5 className="pb-1 font-weight-bold">We focus on customer goals</h5>
                             <p className="col-10 mx-auto">We want to help you make the most out of your site with provide the right software to help you gain clients, as well as provide guidance on how to stay connected.</p>
                         </div>
-                        <div className="col-12 col-sm-4">
+                        <div className="col-12 col-sm-4 mb-sm-0">
                             <h5 className="pb-1 font-weight-bold">We're cost effective!</h5>
                             <p className="col-10 mx-auto">We don't want any of your money! We want to provide as much help for our communinity with nothing in return!</p>
                         </div>
