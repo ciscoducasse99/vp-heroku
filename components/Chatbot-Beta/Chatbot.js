@@ -342,10 +342,23 @@ const ViaBeta = () => (
             hideBotAvatar='true'
             width='650px'
             steps={steps}
+            bubbleStyle={{
+
+            }}
             bubbleOptionStyle={{
               background:'#090909',
               color:'white'
             }}
+            floatingStyle={{
+              left: 'calc(50% - 28px)',
+              right: 'initial',
+              transformOrigin: 'bottom center',
+              borderRadius: 15,
+            }}
+            style={{
+              bottom:'50px',
+              left: 'calc(50% - 320px)'
+            }} 
           />
         </ThemeProvider>
       </div>

@@ -19,8 +19,9 @@ const WebDev = () => (
                                     <h1 className="py-2"><strong>What would you do if you can do anything you want?</strong></h1>
                                 </div>
                                 <div className="col-lg-8 mx-auto">
-                                    <p className="lead mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+                                    <p className="lead my-4">I want to help everyone have the ability to do whatever they may want to become. My best way to help is to develop FREE websites for those looking to go into a new profession.</p>
                                 </div>
+                                <a className="btn vp-button">Connect with Cisco</a>
                             </div>
                         </div>
                     </div>

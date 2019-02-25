@@ -16,14 +16,22 @@
     }
   }
 
-  #main-section{
-    background:black;
-    color:whitesmoke;
-
-    .card{
-      background:#262626;
-    }
+  
+  .vp-button{
+    margin: 0;
+    padding: 0 2rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 25px;
+    background: #0076ff;
+    box-shadow: 0 4px 14px 0 rgba(0,118,255,0.39);
+    color: white;
   }
+
+  .vp-button:hover{
+    background:#1180ff;
+  }
+
 
   #meet-via-section{
     min-height:420px;
@@ -57,7 +65,14 @@
 }
 
 @media only screen and (max-width:486px){
-  h1{
-    font-size:24px;
+  
+  #vp-masthead{
+    h1{
+      font-size:30px;
+    }
+    p.lead{
+      font-size:16px;
+    }
   }
+
 }
