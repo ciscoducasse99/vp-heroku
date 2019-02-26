@@ -33,11 +33,13 @@
   }
 
   #why-vp-section{
-    background:black;
-    color:white;
+    background:white;
+    color:black;
+    font-family: 'Lato';
 
-    h5{
-      text-decoration: underline;
+    p{
+      font-size:20px;
+      color:rgba(14,30,37,.54);
     }
   }
 

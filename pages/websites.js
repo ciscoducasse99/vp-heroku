@@ -21,34 +21,38 @@ const WebDev = () => (
                                 <div className="col-lg-8 mx-auto">
                                     <p className="lead my-4">My best way to help is to develop FREE websites for those looking to go into a new profession...with no strings attached.</p>
                                 </div>
-                                <a className="btn vp-button">Connect with Cisco</a>
+                                <a className="btn vp-button mt-4">Connect with Cisco</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="why-vp-section" className="text-center m-2 py-3">
-                <div id="questioning-section" className="mb-5 mb-sm-4">
-                    <h2 className="font-weight-bold">Why The Vision Project?</h2>
-                    <p>Why we think we're a good option for you</p>
+            <div id="why-vp-section" className="text-center m-2 py-5">
+                <div id="questioning-section" className="mb-5 mb-sm-5">
+                    <h3 className="font-weight-bold">Why The Vision Project?</h3>
+                    <p>How we plan on providing a platform for you to persue whatever you may want to do</p>
                 </div>
-                <div id="reasonings">
+                <div id="reasonings" className="overflow-hidden">
                     <div className="row">
-                        <div className="col-12 col-sm-4 mb-3 mb-sm-0">
+                        <div className="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
                             <h5 className="pb-1 font-weight-bold">We build on modern technologies</h5>
                             <p className="col-10 mx-auto">We work with modern technologies to insure we stay brushed up on our skills, and to make sure you stay updated in the present.</p>
                         </div>
-                        <div className="col-12 col-sm-4 mb-sm-0">
+                        <div className="col-12 col-sm-4 mb-sm-0 p-0 ">
                             <h5 className="pb-1 font-weight-bold">We focus on customer goals</h5>
                             <p className="col-10 mx-auto">We want to help you make the most out of your site with provide the right software to help you gain clients, as well as provide guidance on how to stay connected.</p>
                         </div>
-                        <div className="col-12 col-sm-4 mb-sm-0">
-                            <h5 className="pb-1 font-weight-bold">We're cost effective!</h5>
+                        <div className="col-12 col-sm-4 mb-sm-0 p-0">
+                            <h4 className="pb-1 font-weight-bold">We're cost effective!</h4>
                             <p className="col-10 mx-auto">We don't want any of your money! We want to provide as much help for our communinity with nothing in return!</p>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div id="modern-tech-section">
+                <h2>We build using tech from TODAY and not yesterday</h2>
             </div>
 
             <div id="meet-via-section">
@@ -61,7 +65,7 @@ const WebDev = () => (
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae non quidem impedit omnis quis deserunt aut, laboriosam id natus saepe laborum pariatur ipsam! Voluptatum, provident blanditiis. Provident, error repellat?
                                 </p>
                                 <Link href="/meetvia">
-                                    <a className="btn vp-rounded btn-secondary px-4 font-weight-bold">Meet Via</a>
+                                    <a className="btn vp-rounded btn-secondary px-4 mt-3 font-weight-bold">Meet Via</a>
                                 </Link>
                             </div>
                         </div>
