@@ -51,7 +51,7 @@ const WebDev = () => (
                 </div>
             </div>
 
-            <div id="modern-tech-section">
+            <div id="modern-tech-section" className="m-2">
                 <h2>We build using tech from TODAY and not yesterday</h2>
             </div>
 

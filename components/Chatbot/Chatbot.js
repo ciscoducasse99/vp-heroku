@@ -338,7 +338,7 @@ const SimpleForm = () => (
             headerTitle='Via'
             hideUserAvatar='true'
             hideBotAvatar='true'
-            width='650px'
+            width='850px'
             steps={steps}
             bubbleStyle={{
 
@@ -354,7 +354,7 @@ const SimpleForm = () => (
               borderRadius: 15,
             }}
             style={{
-              left: 'calc(50% - 320px)'
+              left: 'calc(50% - 420px)'
             }} 
           />
         </ThemeProvider>
