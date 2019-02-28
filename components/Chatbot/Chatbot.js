@@ -320,7 +320,7 @@ const steps = [
 const theme = {
   background: '#1a1a1a',
   fontFamily: 'Poppins',
-  headerBgColor: '#090909',
+  headerBgColor: '#0f0f0f',
   headerFontColor: 'whitesmoke',
   headerFontSize: '20px',
   botBubbleColor: 'black',
