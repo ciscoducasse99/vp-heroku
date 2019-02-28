@@ -1,11 +1,12 @@
 #home-main-section{
-    background-color:#0c0c0c;
+    background-color:#0f0f0f;
     color:white;
     width:100%;
     min-height:95vh;
 
     p{
         font-family: 'Lato';
+        color:grey;
     }
 
     #home-page-header{
@@ -16,11 +17,9 @@
         #p-header{
             font-family:'Roboto';
             font-size: 18px;
-            color:grey;
         }
         #p-desc{
             padding-bottom:20px;
-            color:grey;
         }
 
     }
