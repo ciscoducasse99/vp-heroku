@@ -28,7 +28,7 @@ const WebDev = () => (
                 </div>
             </div>
 
-            <div id="why-vp-section" className="text-center m-2 py-5">
+            {/* <div id="why-vp-section" className="text-center m-2 py-5">
                 <div id="questioning-section" className="mb-5 mb-sm-5">
                     <h3 className="font-weight-bold">Why The Vision Project?</h3>
                     <p>How we plan on providing a platform for you to persue whatever you may want to do</p>
@@ -49,7 +49,7 @@ const WebDev = () => (
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div id="modern-tech-section" className="m-2">
                 <h2>We build using tech from TODAY and not yesterday</h2>
