@@ -10,23 +10,90 @@ const WebDev = () => (
         </Head>
 
         <div id="webdev-page">
-            <div id="vp-masthead" className="m-2">
-                <div className="dark-overlay">
-                    <div className="container">
-                        <div className="py-5" id="vp-masthead-content">
-                            <div className="text-center">
-                                <div className="col-lg-10 mx-auto ">
-                                    <h1 className="py-2"><strong>What would you do if you can do anything you want?</strong></h1>
-                                </div>
-                                <div className="col-lg-8 mx-auto">
-                                    <p className="lead my-4">My best way to help is to develop FREE websites for those looking to go into a new profession...with no strings attached.</p>
-                                </div>
-                                <a className="btn vp-button mt-4">Connect with Cisco</a>
-                            </div>
+            <div id="vp-welcoming-section" className="mt-0 ml-2 mr-2 mb-2">
+                <div className="py-5" id="vp-masthead-content">
+                    <div className="text-center">
+                        <div className="col-lg-10 mx-auto py-2 mt-3">
+                            <p className="text-dark text-uppercase font-weight-bold font-header p-0">Welcome to The Vision Project</p>
+                            <h1 className=""><strong>What would you do if you can do anything you want?</strong></h1>
+                        </div>
+                        <div className="col-lg-8 mx-auto">
+                            <p className="lead my-4">My best way to help is to develop FREE websites for those looking to go into a new profession...with no strings attached.</p>
+                        </div>
+                        <a className="btn vp-button mt-4 mb-3 mb-sm-0">Connect with Cisco</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="vp-masthead-section">
+                <div id="dark-overlay">
+                    <div id="vp-masthead-content">
+                        <div className="text-center">
+                            <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates quae at inventore laudantium quibusdam delectus aliquam.</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <section id="vp-services-section">
+                <div className="container">
+                    <div className="row section-header has-bottom-sep">
+                        <div className="text-center">
+                            <h3 className="subhead">What We Do</h3>
+                            <h1 className="display-4 text-center">We’ve got everything you need to launch and expand your business</h1>
+                        </div>
+                    </div>
+                    <div className="row services-list block-1-2 block-tab-full">
+                        <div className="col-block service-item" data-aos="fade-up">
+                            <div className="service-icon">
+                                <i className="icon-paint-brush"></i>
+                            </div>
+                            <div className="service-text">
+                                <h3 className="h2">Brand Identity</h3>
+                                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+</p>
+                            </div>
+                        </div>
+                        <div className="col-block service-item" data-aos="fade-up">
+                            <div className="service-icon">
+                                <i className="icon-megaphone"></i>
+                            </div>
+                            <div className="service-text">
+                                <h3 className="h2">Marketing</h3>
+                                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+</p>
+                            </div>
+                        </div>
+                        <div className="col-block service-item" data-aos="fade-up">
+                            <div className="service-icon">
+                                <i className="icon-earth"></i>
+                            </div>
+                            <div className="service-text">
+                                <h3 className="h2">Web Design</h3>
+                                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+</p>
+                            </div>
+                        </div>
+
+                        <div className="col-block service-item" data-aos="fade-up">
+                            <div className="service-icon"><i class="icon-lego-block"></i></div>
+                            <div className="service-text">
+                                <h3 className="h2">Web Development</h3>
+                                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             {/* <div id="why-vp-section" className="text-center m-2 py-5">
                 <div id="questioning-section" className="mb-5 mb-sm-5">
@@ -50,10 +117,6 @@ const WebDev = () => (
                     </div>
                 </div>
             </div> */}
-
-            <div id="modern-tech-section" className="m-2">
-                <h2>We build using tech from TODAY and not yesterday</h2>
-            </div>
 
             <div id="meet-via-section">
                 <div id="mvs-content">

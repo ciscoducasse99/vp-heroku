@@ -1,53 +1,63 @@
 #webdev-page{
   background:#080808;
 
-  #vp-masthead{
+  #vp-welcoming-section{
     background-size: cover;
-    min-height:450px;
+    min-height:550px;
     color: white;
+    background-image: url('/static/images/boston.jpg') no-repeat;
 
+    .font-size-header{
+      font-size: 18px;
+    }
+
+    .vp-button{
+      margin: 0;
+      padding: 0 2rem;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      border-radius: 25px;
+      background: #0076ff;
+      box-shadow: 0 4px 14px 0 rgba(0,118,255,0.39);
+      color: white;
+    }
+
+    .vp-button:hover{
+      background:#1180ff;
+    }
+
+  }
+
+  #vp-masthead-section{
+    min-height:375px;
+    // background-image: url('../static/images/day-boston.jpg') no-repeat;
+    // background-size: cover;
+    // background-attachment: fixed;
+
+    background:white;
+
+    
     .dark-overlay {
       background-color: rgba(0, 0, 0, 0.8);
       position: relative;
       top: 0;
       left: 0;
       width: 100%;
-      min-height:450px; 
+      min-height:375px; 
     }
   }
 
-  
-  .vp-button{
-    margin: 0;
-    padding: 0 2rem;
-    height: 2.5rem;
-    line-height: 2.5rem;
-    border-radius: 25px;
-    background: #0076ff;
-    box-shadow: 0 4px 14px 0 rgba(0,118,255,0.39);
-    color: white;
-  }
-
-  .vp-button:hover{
-    background:#1180ff;
-  }
-
-  #why-vp-section{
-    background:white;
-    color:black;
+  #vp-services-section{
+    background:black;
+    color:white;
     font-family: 'Roboto';
 
     p{
       font-size:20px;
       color:rgba(14,30,37,.54);
     }
-  }
 
-  #modern-tech-section{
-    background:white;
-    color:black;
   }
-
 
   #meet-via-section{
     min-height:420px;
@@ -78,6 +88,7 @@
       }
     }
   }
+
 }
 
 @media only screen and (max-width:486px){
@@ -89,6 +100,11 @@
     p.lead{
       font-size:16px;
     }
+
+    .font-header{
+      font-size:14px;
+    }
+
   }
 
 }
