@@ -37,20 +37,20 @@ const WebDev = () => (
 
             <section id="vp-services-section">
                 <div className="container">
-                    <div className="row section-header has-bottom-sep">
+                    <div className="row">
                         <div className="text-center">
                             <h3 className="subhead">What We Do</h3>
-                            <h1 className="display-4 text-center">We’ve got everything you need to launch and expand your business</h1>
+                            <h1 className="display-custom text-center">We’ve got everything you need to launch and expand your business online</h1>
                         </div>
                     </div>
-                    <div className="row services-list block-1-2 block-tab-full">
-                        <div className="col-block service-item" data-aos="fade-up">
+                    <div className="row ">
+                        <div className="col-block rounded p-2" data-aos="fade-up">
                             <div className="service-icon">
-                                <i className="icon-paint-brush"></i>
+                                <i className="fa fa-paint-brush fa-4x"></i>
                             </div>
                             <div className="service-text">
                                 <h3 className="h2">Brand Identity</h3>
-                                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                                <p className="text-grey">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                                 Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                                 Sunt suscipit voluptas ipsa in tempora esse soluta sint.
 </p>
@@ -58,11 +58,11 @@ const WebDev = () => (
                         </div>
                         <div className="col-block service-item" data-aos="fade-up">
                             <div className="service-icon">
-                                <i className="icon-megaphone"></i>
+                                <i className="fa fa-bullhorn"></i>
                             </div>
                             <div className="service-text">
                                 <h3 className="h2">Marketing</h3>
-                                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                                <p className="text-grey">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                                 Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                                 Sunt suscipit voluptas ipsa in tempora esse soluta sint.
 </p>
@@ -70,11 +70,11 @@ const WebDev = () => (
                         </div>
                         <div className="col-block service-item" data-aos="fade-up">
                             <div className="service-icon">
-                                <i className="icon-earth"></i>
+                                <i className="fa fa-globe"></i>
                             </div>
                             <div className="service-text">
                                 <h3 className="h2">Web Design</h3>
-                                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                                <p className="text-grey">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                                 Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                                 Sunt suscipit voluptas ipsa in tempora esse soluta sint.
 </p>
@@ -82,10 +82,12 @@ const WebDev = () => (
                         </div>
 
                         <div className="col-block service-item" data-aos="fade-up">
-                            <div className="service-icon"><i class="icon-lego-block"></i></div>
+                            <div className="service-icon">
+                                <i class="fa fa-th"></i>
+                            </div>
                             <div className="service-text">
                                 <h3 className="h2">Web Development</h3>
-                                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                                <p className="text-grey">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                                 Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                                 Sunt suscipit voluptas ipsa in tempora esse soluta sint.
 </p>

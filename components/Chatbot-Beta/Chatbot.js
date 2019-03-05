@@ -337,27 +337,33 @@ const ViaBeta = () => (
           <ChatBot
             headerTitle='Via'
             enableMobileAutoFocus='true'
-            floating='true'
             hideUserAvatar='true'
             hideBotAvatar='true'
             width='650px'
             steps={steps}
-            bubbleStyle={{
-
-            }}
             bubbleOptionStyle={{
               background:'#090909',
               color:'white'
             }}
+            //determines if there even is a floating icon
+            /*floating='true'*/
+            
+            //Floating style affects the button 
             floatingStyle={{
               left: 'calc(50% - 28px)',
-              right: 'initial',
+              top: 'calc(-50% - 28px)',
               transformOrigin: 'bottom center',
               borderRadius: 15,
             }}
+
+            //style affects the actual chatbot
             style={{
-              bottom:'50px',
-              left: 'calc(50% - 320px)'
+              
+              margin: '0',
+              position:'absolute',
+              top: '50%',
+              left:  '50%',
+              transform: 'translate(-50%, -50%)'
             }} 
           />
         </ThemeProvider>
