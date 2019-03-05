@@ -339,6 +339,7 @@ const ViaBeta = () => (
             enableMobileAutoFocus='true'
             hideUserAvatar='true'
             hideBotAvatar='true'
+            recognitionEnable='true'
             width='650px'
             steps={steps}
             bubbleOptionStyle={{

@@ -340,6 +340,8 @@ const SimpleForm = () => (
             hideBotAvatar='true'
             width='850px'
             steps={steps}
+            
+            recognitionEnable='true'
             bubbleStyle={{
 
             }}

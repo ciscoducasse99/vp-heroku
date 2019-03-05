@@ -6,7 +6,7 @@ const ViaBetaExport = () =>(
         <ViaBeta/>
 
         <style jsx>{`
-            position: relative;
+            position: absolute;
         `}</style>
     </Layout>
 );
