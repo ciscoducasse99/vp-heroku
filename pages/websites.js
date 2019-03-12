@@ -10,17 +10,17 @@ const WebDev = () => (
         </Head>
 
         <div id="webdev-page">
-            <div id="vp-welcoming-section" className="mt-0 ml-2 mr-2 mb-2">
-                <div className="py-5" id="vp-masthead-content">
+            <div id="vp-welcoming-section" className="">
+                <div className="" id="vp-masthead-content">
                     <div className="text-center">
-                        <div className="col-lg-10 mx-auto py-2 mt-3">
-                            <p className="text-dark text-uppercase font-weight-bold font-header p-0">Welcome to The Vision Project</p>
+                        <div className="col-lg-10 mx-auto">
+                            <p className="text-dark text-uppercase font-weight-bold font-header">Welcome to The Vision Project</p>
                             <h1 className=""><strong>What would you do if you can do anything you want?</strong></h1>
                         </div>
                         <div className="col-lg-8 mx-auto">
-                            <p className="lead my-4">My best way to help is to develop FREE websites for those looking to go into a new profession...with no strings attached.</p>
+                            <p className="lead">My best way to help is to develop FREE websites for those looking to go into a new profession...with no strings attached.</p>
                         </div>
-                        <a className="btn vp-button mt-4 mb-3 mb-sm-0">Connect with Cisco</a>
+                        <a className="btn vp-button">Connect with Cisco</a>
                     </div>
                 </div>
             </div>
@@ -43,50 +43,47 @@ const WebDev = () => (
                             <h1 className="display-custom text-center">We’ve got everything you need to launch and expand your business online</h1>
                         </div>
                     </div>
-                    <div className="row ">
-                        <div className="col-block rounded p-2" data-aos="fade-up">
-                            <div className="service-icon">
-                                <i className="fa fa-paint-brush fa-4x"></i>
+                    <div className="row py-4">
+                        <div className="col-block col-sm-8 col-md-5 col-lg-3 rounded mx-auto">
+                            <div className="service-icon text-center">
+                                <i className="fa fa-code fa-3x"></i>
                             </div>
                             <div className="service-text">
-                                <h3 className="h2">Brand Identity</h3>
+                                <h3 className="text-center">Web development</h3>
                                 <p className="text-grey">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                                 Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-</p>
+                                Sunt suscipit voluptas ipsa in tempora esse soluta sint. </p>
                             </div>
                         </div>
-                        <div className="col-block service-item" data-aos="fade-up">
-                            <div className="service-icon">
-                                <i className="fa fa-bullhorn"></i>
+                        <div className="col-block col-sm-8 col-md-5 col-lg-3 mx-auto">
+                            <div className="service-icon text-center">
+                                <i className="fa fa-bar-chart fa-3x"></i>
                             </div>
                             <div className="service-text">
-                                <h3 className="h2">Marketing</h3>
+                                <h3 className="text-center">Statistics/Growth</h3>
                                 <p className="text-grey">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                                 Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-</p>
+                                Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
                             </div>
                         </div>
-                        <div className="col-block service-item" data-aos="fade-up">
-                            <div className="service-icon">
-                                <i className="fa fa-globe"></i>
+                        <div className="col-block col-sm-8 col-md-5 col-lg-3 mx-auto" >
+                            <div className="service-icon text-center">
+                                <i className="fa fa-lightbulb-o fa-3x"></i>
                             </div>
                             <div className="service-text">
-                                <h3 className="h2">Web Design</h3>
+                                <h3 className="text-center">New Ideas</h3>
                                 <p className="text-grey">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                                 Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-</p>
+                                Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
                             </div>
                         </div>
 
-                        <div className="col-block service-item" data-aos="fade-up">
-                            <div className="service-icon">
-                                <i class="fa fa-th"></i>
+                        <div className="col-block col-sm-8 col-md-5 col-lg-3 mx-auto">
+                            <div className="service-icon text-center">
+                                <i class="fa fa-diamond fa-3x"></i>
                             </div>
                             <div className="service-text">
-                                <h3 className="h2">Web Development</h3>
+                                <h3 className="text-center">Web Design</h3>
                                 <p className="text-grey">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                                 Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                                 Sunt suscipit voluptas ipsa in tempora esse soluta sint.
@@ -96,6 +93,15 @@ const WebDev = () => (
                     </div>
                 </div>
             </section>
+
+            <section id="vp-why-reason">
+                <div className="text-center">
+                    <h3>Why we do it</h3>
+                    <p className="lead">People hate their jobs</p>
+                    <p className="lead">promote creativeness</p>
+                    <p className="lead">Find more reasons Cisco</p>
+                </div>
+            </section>            
 
             {/* <div id="why-vp-section" className="text-center m-2 py-5">
                 <div id="questioning-section" className="mb-5 mb-sm-5">

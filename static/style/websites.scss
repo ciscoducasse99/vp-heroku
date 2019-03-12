@@ -1,9 +1,13 @@
+$spacex-link:#8b939b;
+$spacex-main:#0e1112;
+$spacex-text:#4b5256;
+
 #webdev-page{
   background:#080808;
 
   #vp-welcoming-section{
     background-size: cover;
-    min-height:550px;
+    min-height:450px;
     background: black;
     color: white;
     background-image: url('/static/images/boston.jpg') no-repeat;
@@ -49,27 +53,19 @@
   }
 
   #vp-services-section{
-    background:white;
-    color:black;
+    background:$spacex-main;
+    color:white;
     font-family: 'Roboto';
 
     p{
-      font-size:20px;
-      color:rgba(14,30,37,.54);
-    }
-
-    .col-block:hover{
-      box-shadow:0 1rem 3rem rgba(0,0,0,.175)!important;
-      cursor:pointer;
+      font-size:16px;
+      color:$spacex-text;
     }
 
     .subhead{
-      font-size:1.7rem;
     }
 
     .display-custom{
-      font-size:5.2rem;
-      line-height: .9;
     }
 
   }
