@@ -4,8 +4,7 @@
     color:white;
 }
 .legal-scrollmenu {
-    height:44px;
-    background-color:#000;//#0e1112;
+    background-color:rgb(5, 5, 5);//#0e1112;
     overflow-x:scroll;
     white-space:nowrap; 
     -webkit-overflow-scrolling: touch;
@@ -15,8 +14,8 @@
 
 .legal-scrollmenu a {
     display: inline-block;
-    background:white;
-    color:black;
+    //background:white;
+    color:white;
     text-align: center;
     font-size: 14px;
     padding:6px 14px;

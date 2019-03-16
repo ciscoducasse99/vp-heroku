@@ -70,7 +70,7 @@ const WebDev = () => (
 
                         <div className="col-block col-sm-8 col-md-5 col-lg-3 mx-auto">
                             <div className="service-icon text-center">
-                                <i class="fa fa-diamond fa-3x"></i>
+                                <i className="fa fa-diamond fa-3x"></i>
                             </div>
                             <div className="service-text">
                                 <h3 className="text-center">Web Design</h3>

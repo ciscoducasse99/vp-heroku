@@ -16,18 +16,18 @@ const Privacy = () => (
                     <p>Effective date: January 18, 2019</p>
                 </div>
 
-                <div className="legal-scrollmenu">
-                    <a className="border vp-rounded mr-1" href="#defs">Definitions</a>
-                    <a className="border vp-rounded mr-1" href="#icu">Information Collection and Use</a>
-                    <a className="border vp-rounded mr-1" href="#uod">Use of Data</a>
-                    <a className="border vp-rounded mr-1" href="#tod">Transfer of Data</a>
-                    <a className="border vp-rounded mx-1" href="#dod">Disclosure of Data</a>
-                    <a className="border vp-rounded mx-1" href="#sod">Security of Data</a>
-                    <a className="border vp-rounded mx-1" href="#sp">Service Providers</a>
-                    <a className="border vp-rounded mx-1" href="#ltos">Links to other sites</a>
-                    <a className="border vp-rounded mx-1" href="#cp">Children's Privacy</a>
-                    <a className="border vp-rounded mx-1" href="#changes">Changes</a>
-                    <a className="border vp-rounded mx-1" href="#con-us">Contact</a>
+                <div className="legal-scrollmenu py-2">
+                    <a className=" vp-rounded mr-1" href="#defs">Definitions</a>
+                    <a className=" vp-rounded mr-1" href="#icu">Information Collection and Use</a>
+                    <a className=" vp-rounded mr-1" href="#uod">Use of Data</a>
+                    <a className=" vp-rounded mr-1" href="#tod">Transfer of Data</a>
+                    <a className=" vp-rounded mx-1" href="#dod">Disclosure of Data</a>
+                    <a className=" vp-rounded mx-1" href="#sod">Security of Data</a>
+                    <a className=" vp-rounded mx-1" href="#sp">Service Providers</a>
+                    <a className=" vp-rounded mx-1" href="#ltos">Links to other sites</a>
+                    <a className=" vp-rounded mx-1" href="#cp">Children's Privacy</a>
+                    <a className=" vp-rounded mx-1" href="#changes">Changes</a>
+                    <a className=" vp-rounded mx-1" href="#con-us">Contact</a>
                 </div>
             </div>
             <div className="container pb-3">
