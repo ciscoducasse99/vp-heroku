@@ -34,7 +34,7 @@ $spacex-text:#4b5256;
   }
 
   #vp-masthead-section{
-    min-height:375px;
+    min-height:275px;
     // background-image: url('../static/images/day-boston.jpg') no-repeat;
     // background-size: cover;
     // background-attachment: fixed;
@@ -53,7 +53,7 @@ $spacex-text:#4b5256;
   }
 
   #vp-services-section{
-    background:$spacex-main;
+    background-image:linear-gradient(black,rgb(37, 37, 37));
     color:white;
     font-family: 'Roboto';
 
@@ -62,12 +62,18 @@ $spacex-text:#4b5256;
       color:$spacex-text;
     }
 
-    .subhead{
-    }
+  }
 
-    .display-custom{
-    }
+  #vp-vision-section{
+    min-height: 225px;
+    background:black;
+    color:white;
+  }
 
+  #vp-mission-section{
+    min-height: 525px;
+    background:white;
+    color:black;
   }
 
   #meet-via-section{
@@ -104,7 +110,10 @@ $spacex-text:#4b5256;
 
 @media only screen and (max-width:486px){
   
-  #vp-masthead{
+  #vp-masthead-section{
+    min-height: 175px;
+    color:red;
+
     h1{
       font-size:30px;
     }

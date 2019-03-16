@@ -25,17 +25,7 @@ const WebDev = () => (
                 </div>
             </div>
 
-            <div id="vp-masthead-section">
-                <div id="dark-overlay">
-                    <div id="vp-masthead-content">
-                        <div className="text-center">
-                            <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates quae at inventore laudantium quibusdam delectus aliquam.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <section id="vp-services-section">
+            <section id="vp-services-section" className="py-3">
                 <div className="container">
                     <div className="row">
                         <div className="text-center">
@@ -57,10 +47,10 @@ const WebDev = () => (
                         </div>
                         <div className="col-block col-sm-8 col-md-5 col-lg-3 mx-auto">
                             <div className="service-icon text-center">
-                                <i className="fa fa-bar-chart fa-3x"></i>
+                                <i className="fa fa-bolt fa-3x"></i>
                             </div>
                             <div className="service-text">
-                                <h3 className="text-center">Statistics/Growth</h3>
+                                <h3 className="text-center">Fast production</h3>
                                 <p className="text-grey">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                                 Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                                 Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
@@ -94,14 +84,17 @@ const WebDev = () => (
                 </div>
             </section>
 
-            <section id="vp-why-reason">
+            {/* <section id="vp-why-reason">
                 <div className="text-center">
                     <h3>Why we do it</h3>
-                    <p className="lead">People hate their jobs</p>
-                    <p className="lead">promote creativeness</p>
-                    <p className="lead">Find more reasons Cisco</p>
+                    <h4 className="">People hate their jobs</h4>
+                    <p>something goes here part 1</p>
+                    <h4 className="">promote creativeness</h4>
+                    <p>something goes here part 2</p>
+                    <h4 className="">Find more reasons Cisco</h4>
+                    <p>something goes here part 3</p>
                 </div>
-            </section>            
+            </section>             */}
 
             {/* <div id="why-vp-section" className="text-center m-2 py-5">
                 <div id="questioning-section" className="mb-5 mb-sm-5">
@@ -125,6 +118,24 @@ const WebDev = () => (
                     </div>
                 </div>
             </div> */}
+
+            <div id="vp-vision-section">
+                <div className="text-center">
+                    <h1 className="display-3">Our Vision</h1>
+                    <p className="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum tempora laborum explicabo! Dolores accusantium porro sit at, ducimus asperiores beatae!</p>
+                </div>
+            </div>
+
+            <div id="vp-mission-section">
+                <div className="text-center">
+                    <h1 className="display-4">Our current Mission</h1>
+                    <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iure veritatis sunt fuga adipisci tempora repellendus vitae esse voluptatem quo, veniam architecto cumque numquam ipsum.</p>
+                    <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, deserunt odit? Dolore facere eligendi consequatur adipisci illo blanditiis voluptatibus neque!</p>
+                    <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur saepe ipsam eveniet laudantium rem.</p>
+                    <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, provident?</p>
+                    <p className="lead">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
 
             <div id="meet-via-section">
                 <div id="mvs-content">
