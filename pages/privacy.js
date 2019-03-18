@@ -1,5 +1,6 @@
 import Layout from '../components/Layout/Layout';
 import Head from 'next/head';
+import {StickyContainer, Sticky} from 'react-sticky';
 import '../static/style/legal.scss';
 
 const Privacy = () => (
@@ -9,27 +10,31 @@ const Privacy = () => (
         </Head>
 
         <div id="page-content">
-       
+
+            <StickyContainer>
             <div className="text-center">
                 <div className="pt-3">
                     <h1 className="mb-0">Privacy Policy</h1>
                     <p>Effective date: January 18, 2019</p>
                 </div>
 
-                <div className="legal-scrollmenu py-2">
-                    <a className=" vp-rounded mr-1" href="#defs">Definitions</a>
-                    <a className=" vp-rounded mr-1" href="#icu">Information Collection and Use</a>
-                    <a className=" vp-rounded mr-1" href="#uod">Use of Data</a>
-                    <a className=" vp-rounded mr-1" href="#tod">Transfer of Data</a>
-                    <a className=" vp-rounded mx-1" href="#dod">Disclosure of Data</a>
-                    <a className=" vp-rounded mx-1" href="#sod">Security of Data</a>
-                    <a className=" vp-rounded mx-1" href="#sp">Service Providers</a>
-                    <a className=" vp-rounded mx-1" href="#ltos">Links to other sites</a>
-                    <a className=" vp-rounded mx-1" href="#cp">Children's Privacy</a>
-                    <a className=" vp-rounded mx-1" href="#changes">Changes</a>
-                    <a className=" vp-rounded mx-1" href="#con-us">Contact</a>
-                </div>
+                <Sticky>{({style}) => (
+                    <div className="legal-scrollmenu py-2" style={style}>
+                        <a className=" vp-rounded mr-1" href="#defs">Definitions</a>
+                        <a className=" vp-rounded mr-1" href="#icu">Information Collection and Use</a>
+                        <a className=" vp-rounded mr-1" href="#uod">Use of Data</a>
+                        <a className=" vp-rounded mr-1" href="#tod">Transfer of Data</a>
+                        <a className=" vp-rounded mx-1" href="#dod">Disclosure of Data</a>
+                        <a className=" vp-rounded mx-1" href="#sod">Security of Data</a>
+                        <a className=" vp-rounded mx-1" href="#sp">Service Providers</a>
+                        <a className=" vp-rounded mx-1" href="#ltos">Links to other sites</a>
+                        <a className=" vp-rounded mx-1" href="#cp">Children's Privacy</a>
+                        <a className=" vp-rounded mx-1" href="#changes">Changes</a>
+                        <a className=" vp-rounded mx-1" href="#con-us">Contact</a>
+                    </div>
+                )}</Sticky>
             </div>
+            </StickyContainer>
             <div className="container pb-3">
 
                 <p>The Vision Project ("us", "we", or "our") operates the www.thevisionproject.com website (hereinafter referred to as the "Service").</p>
