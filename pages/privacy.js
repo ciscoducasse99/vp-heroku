@@ -18,21 +18,31 @@ const Privacy = () => (
                     <p>Effective date: January 18, 2019</p>
                 </div>
 
-                <Sticky>{({style}) => (
-                    <div className="legal-scrollmenu py-2" style={style}>
-                        <a className=" vp-rounded mr-1" href="#defs">Definitions</a>
-                        <a className=" vp-rounded mr-1" href="#icu">Information Collection and Use</a>
-                        <a className=" vp-rounded mr-1" href="#uod">Use of Data</a>
-                        <a className=" vp-rounded mr-1" href="#tod">Transfer of Data</a>
-                        <a className=" vp-rounded mx-1" href="#dod">Disclosure of Data</a>
-                        <a className=" vp-rounded mx-1" href="#sod">Security of Data</a>
-                        <a className=" vp-rounded mx-1" href="#sp">Service Providers</a>
-                        <a className=" vp-rounded mx-1" href="#ltos">Links to other sites</a>
-                        <a className=" vp-rounded mx-1" href="#cp">Children's Privacy</a>
-                        <a className=" vp-rounded mx-1" href="#changes">Changes</a>
-                        <a className=" vp-rounded mx-1" href="#con-us">Contact</a>
-                    </div>
-                )}</Sticky>
+                <Sticky>{({
+                    style,
+                    // the following are also available but unused in this example
+                    isSticky,
+                    wasSticky,
+                    distanceFromTop,
+                    distanceFromBottom,
+                    calculatedHeight
+                }) => (
+                   <div className="legal-scrollmenu py-2" style={style}>
+                    <a className=" vp-rounded mr-1" href="#defs">Definitions</a>
+                    <a className=" vp-rounded mr-1" href="#icu">Information Collection and Use</a>
+                    <a className=" vp-rounded mr-1" href="#uod">Use of Data</a>
+                    <a className=" vp-rounded mr-1" href="#tod">Transfer of Data</a>
+                    <a className=" vp-rounded mx-1" href="#dod">Disclosure of Data</a>
+                    <a className=" vp-rounded mx-1" href="#sod">Security of Data</a>
+                    <a className=" vp-rounded mx-1" href="#sp">Service Providers</a>
+                    <a className=" vp-rounded mx-1" href="#ltos">Links to other sites</a>
+                    <a className=" vp-rounded mx-1" href="#cp">Children's Privacy</a>
+                    <a className=" vp-rounded mx-1" href="#changes">Changes</a>
+                    <a className=" vp-rounded mx-1" href="#con-us">Contact</a>
+                </div>
+                )}
+                
+                </Sticky>
             </div>
             </StickyContainer>
             <div className="container pb-3">

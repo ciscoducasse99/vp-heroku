@@ -25,12 +25,12 @@ const WebDev = () => (
                 </div>
             </div>
 
-            <section id="vp-services-section" className="py-3">
+            <section id="vp-services-section" className="">
                 <div className="container">
                     <div className="row">
                         <div className="text-center">
                             <h3 className="subhead">What We Do</h3>
-                            <h1 className="display-custom text-center">We’ve got everything you need to launch and expand your business online</h1>
+                            <h1 className="heading text-center">We’ve got everything you need to launch and expand your business online</h1>
                         </div>
                     </div>
                     <div className="row py-4">
@@ -39,7 +39,7 @@ const WebDev = () => (
                                 <i className="fa fa-code fa-3x"></i>
                             </div>
                             <div className="service-text">
-                                <h3 className="text-center">Web development</h3>
+                                <h4 className="text-center">Web development</h4>
                                 <p className="text-grey">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                                 Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                                 Sunt suscipit voluptas ipsa in tempora esse soluta sint. </p>
@@ -50,7 +50,7 @@ const WebDev = () => (
                                 <i className="fa fa-bolt fa-3x"></i>
                             </div>
                             <div className="service-text">
-                                <h3 className="text-center">Fast production</h3>
+                                <h4 className="text-center">Fast production</h4>
                                 <p className="text-grey">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                                 Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                                 Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
@@ -61,7 +61,7 @@ const WebDev = () => (
                                 <i className="fa fa-lightbulb-o fa-3x"></i>
                             </div>
                             <div className="service-text">
-                                <h3 className="text-center">New Ideas</h3>
+                                <h4 className="text-center">New Ideas</h4>
                                 <p className="text-grey">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                                 Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                                 Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
@@ -73,51 +73,15 @@ const WebDev = () => (
                                 <i className="fa fa-diamond fa-3x"></i>
                             </div>
                             <div className="service-text">
-                                <h3 className="text-center">Web Design</h3>
+                                <h4 className="text-center">Web Design</h4>
                                 <p className="text-grey">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                                 Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                                Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-</p>
+                                Sunt suscipit voluptas ipsa in tempora esse soluta sint. </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            {/* <section id="vp-why-reason">
-                <div className="text-center">
-                    <h3>Why we do it</h3>
-                    <h4 className="">People hate their jobs</h4>
-                    <p>something goes here part 1</p>
-                    <h4 className="">promote creativeness</h4>
-                    <p>something goes here part 2</p>
-                    <h4 className="">Find more reasons Cisco</h4>
-                    <p>something goes here part 3</p>
-                </div>
-            </section>             */}
-
-            {/* <div id="why-vp-section" className="text-center m-2 py-5">
-                <div id="questioning-section" className="mb-5 mb-sm-5">
-                    <h3 className="font-weight-bold">Why The Vision Project?</h3>
-                    <p>How we plan on providing a platform for you to persue whatever you may want to do</p>
-                </div>
-                <div id="reasonings" className="overflow-hidden">
-                    <div className="row">
-                        <div className="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
-                            <h5 className="pb-1 font-weight-bold">We build on modern technologies</h5>
-                            <p className="col-10 mx-auto">We work with modern technologies to insure we stay brushed up on our skills, and to make sure you stay updated in the present.</p>
-                        </div>
-                        <div className="col-12 col-sm-4 mb-sm-0 p-0 ">
-                            <h5 className="pb-1 font-weight-bold">We focus on customer goals</h5>
-                            <p className="col-10 mx-auto">We want to help you make the most out of your site with provide the right software to help you gain clients, as well as provide guidance on how to stay connected.</p>
-                        </div>
-                        <div className="col-12 col-sm-4 mb-sm-0 p-0">
-                            <h4 className="pb-1 font-weight-bold">We're cost effective!</h4>
-                            <p className="col-10 mx-auto">We don't want any of your money! We want to provide as much help for our communinity with nothing in return!</p>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
 
             <div id="vp-vision-section">
                 <div className="text-center">
