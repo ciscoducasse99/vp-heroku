@@ -87,6 +87,7 @@ const WebDev = () => (
                 <div className="text-center">
                     <h1 className="display-3">Our Vision</h1>
                     <p className="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum tempora laborum explicabo! Dolores accusantium porro sit at, ducimus asperiores beatae!</p>
+                    <p>build something that outlasts you</p>
                 </div>
             </div>
 

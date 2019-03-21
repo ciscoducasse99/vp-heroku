@@ -20,12 +20,6 @@ const INDEX = () => (
                 <Sphere />
                 <p id="p-desc" className="pt-3">Click above to get started or <Link href="/websites"><a style={{ color: 'white', textDecoration: 'underline' }}>learn more.</a></Link> </p>
             </div>
-            <div ><a href="https://www.airbnb.com/rooms/33018372?s=51">View On Airbnb</a><a href="https://www.airbnb.com/rooms/33018372?s=51" rel="nofollow">Waffle Haus *Newly Remodeled* Close to Downtown</a>
-            </div>
-            <div >
-            <a href="https://www.airbnb.com/rooms/32994769?s=51">View On Airbnb</a>
-            <a href="https://www.airbnb.com/rooms/32994769?s=51" rel="nofollow">New Luxurious Townhome with Beautiful Valley Views</a>
-            </div>
         </div>
 
     </Layout>
