@@ -6,39 +6,44 @@ $spacex-text:#4b5256;
   background:#080808;
 
   #vp-welcoming-section{
+
     background-size: cover;
     min-height:450px;
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     background-image: url('/static/images/boston.jpg') no-repeat;
 
-    .font-size-header{
-      font-size: 18px;
-    }
+    #vp-welcoming-content{
 
-    .vp-button{
-      margin: 0;
-      padding: 0 2rem;
-      height: 2.5rem;
-      line-height: 2.5rem;
-      border-radius: 25px;
-      background: #0076ff;
-      box-shadow: 0 4px 14px 0 rgba(0,118,255,0.39);
-      color: white;
-    }
+      .font-size-header{
+        font-size: 18px;
+      }
 
-    .vp-button:hover{
-      background:#1180ff;
+      .vp-button{
+        margin: 0;
+        padding: 0 2rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        border-radius: 25px;
+        background: #0076ff;
+        box-shadow: 0 4px 14px 0 rgba(0,118,255,0.39);
+        color: white;
+      }
+
+      .vp-button:hover{
+        background:#1180ff;
+      }
     }
 
   }
 
 
   #vp-services-section{
-    background-image:linear-gradient(black,rgb(46, 46, 46));
-    color:white;
+    background:$spacex-main;
+    color:black;
     font-family: 'Roboto';
 
+    
     p{
       font-size:16px;
       color:$spacex-text;
@@ -98,7 +103,7 @@ $spacex-text:#4b5256;
     }
 
     p.lead{
-      font-size:18px;
+      font-size:15px;
     }
   }
 
