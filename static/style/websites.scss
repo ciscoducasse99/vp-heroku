@@ -3,7 +3,32 @@ $spacex-main:#0e1112;
 $spacex-text:#4b5256;
 
 #webdev-page{
-  background:#080808;
+  position: relative;
+  height: 500px;
+  background: #000000;
+  // background-image: linear-gradient(155deg, #000000 0%, #0f0f0f 50%, #18191a 100%);
+
+
+header h1 {
+  color: white;
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+section {
+  margin: 5% 10%;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+  
 
   #vp-welcoming-section{
 
@@ -40,7 +65,7 @@ $spacex-text:#4b5256;
 
   #vp-services-section{
     background:$spacex-main;
-    color:black;
+    color:white;
     font-family: 'Roboto';
 
     

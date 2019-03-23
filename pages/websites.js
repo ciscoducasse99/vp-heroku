@@ -10,7 +10,7 @@ const WebDev = () => (
         </Head>
 
         <div id="webdev-page">
-            <div id="vp-welcoming-section" className="">
+            {/* <div id="vp-welcoming-section" className="">
                 <div id="vp-welcoming-content" className="text-center pt-5">
                     <div className="col-lg-10 mx-auto mt-1 mt-sm-1">
                         <p className="text-dark text-uppercase font-weight-bold font-header">Welcome to The Vision Project</p>
@@ -21,7 +21,18 @@ const WebDev = () => (
                     </div>
                     <a className="btn vp-button">Connect with Cisco</a>
                 </div>
-            </div>
+            </div> */}
+
+            <header>
+                <h1>Header Content</h1>
+                <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270" >
+                    <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="white" stroke-width="120" stroke-linecap="round" />
+                </svg>
+            </header>
+
+            <section>
+                <h1 className="text-primary">Section Content</h1>
+            </section>
 
             <section id="vp-services-section" className="">
                 {/* <div className="container">
@@ -80,7 +91,7 @@ const WebDev = () => (
                     </div>
                 </div> */}
 
-                <div className="container py-5">
+                <div className="container pb-sm-5">
                     <div className="row py-3">
                         <div className="col-md-6">
                             <div className="">
@@ -95,6 +106,7 @@ const WebDev = () => (
                                 </div>
                                 <div className="p-3 align-self-end">
                                     <div className="text-center">
+                                        <h4 className="text-black">Header 1</h4>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores nisi nihil.</p>
                                     </div>
                                 </div>
@@ -105,6 +117,7 @@ const WebDev = () => (
                                 </div>
                                 <div className="p-3 align-self-end">
                                     <div className="text-center">
+                                        <h4 className="text-black">Header 1</h4>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores nisi nihil.</p>
                                     </div>
                                 </div>
@@ -115,6 +128,7 @@ const WebDev = () => (
                                 </div>
                                 <div className="p-3 align-self-end">
                                     <div className="text-center">
+                                        <h4 className="text-black">Header 1</h4>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores nisi nihil.</p>
                                     </div>
                                 </div>
@@ -125,6 +139,7 @@ const WebDev = () => (
                                 </div>
                                 <div className="p-3 align-self-end">
                                     <div className="text-center">
+                                        <h4 className="text-black">Header 1</h4>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores nisi nihil.</p>
                                     </div>
                                 </div>
