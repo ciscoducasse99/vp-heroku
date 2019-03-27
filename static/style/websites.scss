@@ -2,44 +2,12 @@ $spacex-link:#8b939b;
 $spacex-main:#0e1112;
 $spacex-text:#4b5256;
 
-
-
-  #wavy-bg{
-    header {
-      position: relative;
-      height: 500px;
-      background: black;
-      background-image: linear-gradient(155deg, #002f62 0%, #18496a 50%, #138b89 100%);
-    }
-    
-    header h1 {
-      color: white;
-    }
-    
-    svg {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: auto;
-    }
-    
-    section {
-      margin: 5% 10%;
-    }
-    
-    h1 {
-      margin: 0;
-      text-align: center;
-    }
-  }
-
   #vp-welcoming-section{
-
 
     #vp-welcoming-content{
 
         position: relative;
-        min-height: 100px;
+        min-height:1px;
         background: black;
         color:white;
         //background-image: linear-gradient(155deg, #002f62 0%, #18496a 50%, #138b89 100%);
@@ -85,6 +53,20 @@ $spacex-text:#4b5256;
       color:$spacex-text;
     }
 
+    span{
+      background:#080808;
+    }
+
+    .vp-services-svg{
+      width:325px;
+      height:325px;
+    }
+
+    h2{
+      font-size: 1.618em;
+      font-weight: 600;
+      line-height: 1.333;
+    }
   }
 
   #vp-vision-section{
@@ -136,14 +118,14 @@ $spacex-text:#4b5256;
   #vp-welcoming-section{
     #vp-welcoming-content{
 
-    h1{
-      font-size: 30px;
-    }
+      h1{
+        font-size: 30px;
+      }
 
-    p.lead{
-      font-size:15px;
+      p.lead{
+        font-size:15px;
+      }
     }
-  }
   }
 
   #vp-services-section{

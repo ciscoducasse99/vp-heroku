@@ -27,18 +27,18 @@ const WebDev = () => (
             <div id="vp-welcoming-content" className="text-center pt-5">
                 <div className="col-lg-10 mx-auto mt-1 mt-sm-1">
                     <p className="text-dark text-uppercase font-weight-bold font-header">Welcome to The Vision Project</p>
-                    <h1 className="w-sm-75"><strong>What would you do if you can do anything you want?</strong></h1>
+                    <h1 className=""><strong>What would you do if you can do anything you want?</strong></h1>
                 </div>
                 <div className="col-lg-8 mx-auto">
-                    <p className="lead w-75 mx-auto">Our best way to help is to develop FREE websites for those looking to go into a new profession...with no strings attached.</p>
+                    <p className="lead mx-auto">Our best way to help is to develop FREE websites for those looking to go into a new profession...with no strings attached.</p>
                 </div>
-                <a className="btn vp-button">Connect with Cisco</a>
-                
-                
+                <a className="btn vp-button mt-5 mt-md-0">Connect with us</a>
+
+
             </div>
             <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270" >
-                    <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="white" stroke-width="120" stroke-linecap="round" />
-                </svg>
+                <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="white" stroke-width="120" stroke-linecap="round" />
+            </svg>
         </div>
 
         <section id="vp-services-section" className="">
@@ -99,56 +99,56 @@ const WebDev = () => (
                 </div> */}
 
             <div className="container pb-sm-5">
-                <div className="row py-3">
-                    <div className="col-md-6">
-                        <div className="">
-                            <h1>How we get things done</h1>
-                            <p className="w-75">We're a small team, but this is how we try to be as efficent as possible.</p>
+                <div className="text-center py-3">
+                    <div className="mx-auto">
+                        <div className="mt-3 mb-2">
+                            <h2>How we get things done</h2>
+                            <p className="text-center">We're a small team, but effientcy is in our DNA</p>
                         </div>
                     </div>
-                    <div className="col-md-6">
-                        <div className="d-flex d-row">
-                            <div className="p-3 align-self-start">
-                                <i className="fa fa-diamond fa-3x"></i>
+                    <div className="row">
+                        <div className="col-md-4">
+                            <div className="align-self-start">
+                                <img className="vp-services-svg" src={require('../static/images/data.svg')} />
                             </div>
                             <div className="p-3 align-self-end">
                                 <div className="text-center">
-                                    <h4 className="text-black">Header 1</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores nisi nihil.</p>
+                                    <h4 className="text-black">We learn about you first</h4>
+                                    <p>We need some simple information about you to get us started. With this, we can pinpoint the right route to get you started</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex d-row">
-                            <div className="p-3 align-self-start">
-                                <i className="fa fa-diamond fa-3x"></i>
+                        <div className="col-md-4">
+                            <div className="align-self-start">
+                                <img className="vp-services-svg" src={require('../static/images/designing.svg')} />
                             </div>
                             <div className="p-3 align-self-end">
                                 <div className="text-center">
-                                    <h4 className="text-black">Header 1</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores nisi nihil.</p>
+                                    <h4 className="text-black">We make a great design and strategy to get to your goal</h4>
+                                    <p>Using modern web technologies, we come up with a design that suites whatever it is you may be persuing</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex d-row">
+                        <div className="col-md-4">
                             <div className="p-3 align-self-start">
-                                <i className="fa fa-diamond fa-3x"></i>
+                                <img className="vp-services-svg" src={require('../static/images/working.svg')} />
                             </div>
-                            <div className="p-3 align-self-end">
+                            <div className="align-self-end">
                                 <div className="text-center">
-                                    <h4 className="text-black">Header 1</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores nisi nihil.</p>
+                                    <h4 className="text-black">Our masterminds get to work</h4>
+                                    <p>We combine design and development to get make you a free website, so you can grow your clientel and business</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex d-row">
-                            <div className="p-3 align-self-start">
-                                <i className="fa fa-diamond fa-3x"></i>
-                            </div>
+                        <div className="col-md-6 mx-auto">
                             <div className="p-3 align-self-end">
                                 <div className="text-center">
-                                    <h4 className="text-black">Header 1</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores nisi nihil.</p>
+                                    <h4 className="text-black">We get you out in the real world!</h4>
+                                    <p>We do everything we can to insure you have an easy and reliable launch into the digital world</p>
                                 </div>
+                            </div>
+                            <div className="p-3 align-self-start">
+                                <img className="vp-services-svg" src={require('../static/images/launch.svg')} />
                             </div>
                         </div>
                     </div>
