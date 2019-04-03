@@ -42,67 +42,11 @@ const WebDev = () => (
         </div>
 
         <section id="vp-services-section" className="">
-            {/* <div className="container">
-                    <div className="row">
-                        <div className="text-center">
-                            <h6 className="mx-auto">What We Do</h6>
-                            <h2 className="heading mx-auto w-sm-75 ">Everything you need to expand yourself online</h2>
-                        </div>
-                    </div>
-                    <div className="row py-4">
-                        <div className="col-block col-sm-8 col-md-5 col-lg-3 rounded mx-auto">
-                            <div className="service-icon text-center">
-                                <i className="fa fa-code fa-3x"></i>
-                            </div>
-                            <div className="service-text">
-                                <h4 className="text-center">Web development</h4>
-                                <p className="text-grey">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
-                                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                                Sunt suscipit voluptas ipsa in tempora esse soluta sint. </p>
-                            </div>
-                        </div>
-                        <div className="col-block col-sm-8 col-md-5 col-lg-3 mx-auto">
-                            <div className="service-icon text-center">
-                                <i className="fa fa-bolt fa-3x"></i>
-                            </div>
-                            <div className="service-text">
-                                <h4 className="text-center">Fast production</h4>
-                                <p className="text-grey">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
-                                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                                Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
-                            </div>
-                        </div>
-                        <div className="col-block col-sm-8 col-md-5 col-lg-3 mx-auto" >
-                            <div className="service-icon text-center">
-                                <i className="fa fa-lightbulb-o fa-3x"></i>
-                            </div>
-                            <div className="service-text">
-                                <h4 className="text-center">New Ideas</h4>
-                                <p className="text-grey">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
-                                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                                Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
-                            </div>
-                        </div>
-
-                        <div className="col-block col-sm-8 col-md-5 col-lg-3 mx-auto">
-                            <div className="service-icon text-center">
-                                <i className="fa fa-diamond fa-3x"></i>
-                            </div>
-                            <div className="service-text">
-                                <h4 className="text-center">Web Design</h4>
-                                <p className="text-grey">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
-                                Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                                Sunt suscipit voluptas ipsa in tempora esse soluta sint. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
-
             <div className="container pb-sm-5">
                 <div className="text-center py-3">
                     <div className="mx-auto">
                         <div className="mt-3 mb-2">
-                            <h2>How we get things done</h2>
+                            <h2>How we're getting things done</h2>
                             <p className="text-center">We're a small team, but effientcy is in our DNA</p>
                         </div>
                     </div>
@@ -140,21 +84,48 @@ const WebDev = () => (
                                 </div>
                             </div>
                         </div>
+                        <h4 className="my-4 mx-auto">Last but not least</h4>
                         <div className="col-md-6 mx-auto">
-                            <div className="p-3 align-self-end">
-                                <div className="text-center">
-                                    <h4 className="text-black">We get you out in the real world!</h4>
-                                    <p>We do everything we can to insure you have an easy and reliable launch into the digital world</p>
-                                </div>
-                            </div>
                             <div className="p-3 align-self-start">
                                 <img className="vp-services-svg" src={require('../static/images/launch.svg')} />
+                            </div>
+                        </div>
+                        <div className="p-3 align-self-end mx-auto">
+                            <div className="text-center">
+                                <h4 className="text-black">We get you out in the real world!</h4>
+                                <p>We do everything we can to insure you have an easy and reliable launch into the digital world</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
+        <section id="vp-reasoning-section">
+            <div className="container">
+                <div className="mx-auto">
+                    <div className="row">
+                        <div className="col-10 col-md-4">
+                            <div className="border rounded p-2 ">
+                                <h5>Header 1</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos sapiente illo sit, modi ea placeat.</p>
+                            </div>
+                        </div>
+                        <div className="col-10 col-md-4">
+                            <div className="border rounded p-2">
+                                <h5>Header 1</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos sapiente illo sit, modi ea placeat.</p>
+                            </div>
+                        </div>
+                        <div className="col-10 col-md-4">
+                            <div className="border rounded p-2">
+                                <h5>Header 1</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos sapiente illo sit, modi ea placeat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <div id="vp-vision-section">
