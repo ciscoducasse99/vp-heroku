@@ -4,44 +4,6 @@ import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
 import "./Chatbot.scss";
 
-class zipReview extends Component{
-  constructor(props){
-    super(props);
-
-    this.state ={
-      zip:'',
-    }
-  }
-  
-  componentWillMount(){
-    const {steps} = this.props;
-    const {zipAsk} = steps;
-    console.log(zipAsk);
-
-    this.setState({zipAsk});
-  }
-
-  render(){
-    const {zipAsk} = this.state;
-    const zipArray = ['01850','01851', '01852', '01853','01854'];
-    let result='';
-
-    for(i=0; i<zipArray.length; i++){
-      if(i===zip){
-        result = <div>That works!</div>
-      } else {
-        result= <div>We can't work with anyone outside of Lowell yet. You may contact us directly to discuss your situation.</div>
-      }
-    }
-
-    return(
-      <div style={{width:'100%'}}>
-        <p>{result.value}</p>
-      </div>
-    )
-  }
-
-}
 
 class Review extends Component {
   constructor(props) {
@@ -127,7 +89,7 @@ const steps = [
   },
   {
     id: '4',
-    message: "Okay, {previousValue}! Do you know why I'm here?",
+    message: "Okay, {previousValue}! Do you know what my purpose is?",
     trigger: 'veeActions',
   },
   {
@@ -144,7 +106,7 @@ const steps = [
   },
   {
     id: 'productReveal2',
-    message: "I was created to help people follow their passions and dreams.",
+    message: "I was developed to help get in touch people follow their passions and dreams.",
     trigger: 'productReveal3'
   },
   {
@@ -154,7 +116,7 @@ const steps = [
   },
   {
     id: 'productReveal4',
-    message: "I want to help.",
+    message: "We want to help.",
     trigger: 'productReveal5'
   },
   {
@@ -176,143 +138,153 @@ const steps = [
   {
     id: 'yesFunc',
     message: "Perfect! First off, what's your zip-code?",
-    trigger: 'zipAsk'
-  },
-  {
-    id: 'zipAsk',
-    user: true,
     trigger: 'zipCheck'
   },
   {
     id: 'zipCheck',
-    // component:<zipCheck/>,
+    user:true,
     validator: (value) =>{
       
+      //variables containing user zip and an array of possible zips that should work with what we can work with
       const zipArray = ['01850','01851', '01852', '01853','01854'];
-      let userValue = value;
+      let zipMatches = false;
+      
+      //checks what value is passed by the user and assigned to a variable
+      console.log('user value is ' + value);
   
-      for( let i=0; i<zipArray.length; i++){
-        if(i===value){
-          return true;
-        } else {
-          return 'We can only work with zip codes in Lowell!'
-          //try to use an asMessage:true somewhere.
+
+
+      for(let i=0; i<zipArray.length; i++){
+        console.log('zip is checking at ' + zipArray[i]);
+
+        if (isNaN(value)) {
+          return 'Enter a zip-code number!';
+        }
+
+        if(zipArray[i] == value){
+          console.log('it matches!')
+          zipMatches=true;
+          break;
         }
       }
-      
-      return result;
+
+      return zipMatches;
     },
-    user: true,
-    trigger: 'serviceAsk'
+    trigger: 'occupation'
   },
   {
-    id: 'serviceAsk',
-    user: true,
-    trigger: 'serAccepted'
+    id:'occupation',
+    message:"Sounds good.",
+    trigger:'occupation-2'
   },
   {
-    id: 'serAccepted',
-    message: "Hmm, okay. What's the best way to get in touch with you?",
-    trigger: 'contact'
+    id:'occupation-2',
+    message:'Ok. If you had the oppurtunity to do whatever you want, would you know what to do?',
+    trigger:'occupation-options'
+  },
+  {
+    id:'occupation-options',
+    options:[
+      { value: 'no-occu', label:'Not really', trigger:'no-occu'},
+      { value: 'yes-occu', label:'Yes', trigger:'yes-occu'}
+    ]
+  },
+  {
+    id:'no-occu',
+    message:"Aww.... I can't really do much without you knowing.",
+    trigger:'no-occu-2'
+  },
+  {
+    id:'no-occu-2',
+    message:"But if you ever think of something, you're more than welcome to come back and talk to me again.",
+    trigger:'no-occu-3'
+  },
+  {
+    id:'no-occu-3',
+    message:"We also welcome you to speak to one of our people and just try figure yourself out ..... no strings attached.",
+    trigger:'no-occu-4'
+  },
+  {
+    id:'no-occu-4',
+    message:"Interested?",
+    trigger:'no-occu-options'
+  },
+  {
+    id:'no-occu-options',
+    options:[
+      {value:'no-contact', label:"I'll pass", trigger:'noFunc'},
+      {value:'yes-contact', label:'Sure, why not', trigger:'contact-asking'}
+    ]
+  },
+  {
+    id:'yes-occu',
+    user:true,
+    trigger:'contact-asking'
+  },
+  {
+    id:'contact-asking',
+    message:'Sounds good! I need a form of contact so I can get you connected to my people. What is the eastiest way of doing it for you?',
+    trigger:'contact'
   },
   {
     id: 'contact',
     options: [
-      { value: 'email', label: 'email', trigger: 'emailcomp' },
-      { value: 'phone', label: 'phone', trigger: 'phonecomp' },
-      { value: 'socialmedia', label: 'Social Media', trigger: 'end-message' },
+      { value: 'email', label: 'Email', trigger: 'email' },
+      { value: 'phone', label: 'Phone', trigger: 'phone' }
+    ]
+  },
+  { 
+    id:'email',
+    message:"Okay, email it is. What's the best email address to contact you?",
+    trigger: "email-intake"
+  },
+  { 
+    id:'phone',
+    message:"Okay, phone it is. What's the best phone number to contact you?",
+    trigger: "phone-intake"
+  },
+  {
+    id:'email-intake',
+    user:true,
+    // trigger:'time-of-contact'
+    trigger:'end-step'
+  },
+  {
+    id:'phone-intake',
+    user:true,
+    // trigger:'time-of-contact'
+    trigger:'end-step'
+  },
+  {
+    id:'time-ask',
+    message:'Noted. We eventually need to get in touch. Is there any specific time that works best with you?',
+    trigger:'time-option'
+  },
+  {
+    id:'time-option',
+    options:[
+      { value: 'no', label: 'No', trigger: 'end-step' },
+      { value: 'yes', label: 'Yes', trigger: 'end-step' }
     ],
+    //trigger:
   },
   {
-    id: 'emailcomp',
-    message: 'Okay, through {previousValue}',
-    trigger: 'email'
+    id:'time-of-contact',
+    message:'Looking good. Want us to reach out at a specific time?',
+    trigger:'toc-options'
   },
   {
-    id: 'phonecomp',
-    message: 'Sure. What is your phone number?',
-    trigger: 'phone',
-  },
+    id:'toc-options',
+    options:[
+      {value:'any-time', label:'Any time is fine', trigger:'end-step'},
+      {value:'specific-time', label:'Yes, please!', trigger:'end-step'}
+    ]
+  },  
   {
-    id: 'email',
-    user: true,
-    trigger: 'time',
-  },
-  {
-    id: 'phone',
-    user: true,
-    trigger: 'time',
-  },
-  {
-    id: 'time',
-    message: "Ok. At what time is the best time to reach?",
-    trigger: 'timeAsk'
-  },
-  {
-    id: 'timeAsk',
-    user: true,
-    trigger: 'review'
-  },
-  {
-    id: '7',
-    message: 'Great! Check out your summary',
-    trigger: 'review',
-  },
-  {
-    id: 'review',
-    component: <Review />,
-    asMessage: true,
-    trigger: 'update',
-  },
-  {
-    id: 'update',
-    message: 'Would you like to update some field?',
-    trigger: 'update-question',
-  },
-  {
-    id: 'update-question',
-    options: [
-      { value: 'yes', label: 'Yes', trigger: 'update-yes' },
-      { value: 'no', label: 'No', trigger: 'end-message' },
-    ],
-  },
-  {
-    id: 'update-yes',
-    message: 'What field would you like to update?',
-    trigger: 'update-fields',
-  },
-  {
-    id: 'update-fields',
-    options: [
-      { value: 'name', label: 'Name', trigger: 'update-name' },
-      { value: 'gender', label: 'Gender', trigger: 'update-gender' },
-      { value: 'age', label: 'Age', trigger: 'update-age' },
-    ],
-  },
-  {
-    id: 'update-name',
-    update: 'name',
-    trigger: '7',
-  },
-  {
-    id: 'update-gender',
-    update: 'gender',
-    trigger: '7',
-  },
-  {
-    id: 'update-age',
-    update: 'age',
-    trigger: '7',
-  },
-  // {
-  //   id: 'send-data',
-  //   component:<SendData/>,
-  //   trigger:'end-message'
-  // },
-  {
-    id: 'end-message',
-    message: 'Thanks! Your data was submitted successfully!',
-    end: true,
+    id:'end-step',
+    message:'The end is near.',
+    end:true
+
   }
 ];
 
@@ -333,33 +305,29 @@ const ViaBeta = () => (
   <div id="Vee">
     <div id="chatbot-content">
       <div className="container">
+
         <ThemeProvider theme={theme}>
           <ChatBot
-            headerTitle='Via'
-            enableMobileAutoFocus='true'
+            headerTitle='Chatbot'
             hideUserAvatar='true'
             hideBotAvatar='true'
-            floating='false'
             width='650px'
-            steps={steps}
+	          steps={steps}
+
             bubbleOptionStyle={{
               background:'#090909',
               color:'white'
             }}
-            //determines if there even is a floating icon
-            /*floating='true'*/
             
-            //Floating style affects the button 
             floatingStyle={{
-              left: 'calc(50% - 28px)',
-              top: 'calc(-50% - 28px)',
-              transformOrigin: 'bottom center',
-              borderRadius: 15,
-            }}
+            //Something should be here where the chatbot should be aligned in the center on all viewports
+                      }}
+            // floatingIcon={
+            // //Something else is suppose to go here, I’m not sure what. Something that finds the id of the button being used?
+            // }
 
             //style affects the actual chatbot
-            style={{
-              
+            style={{ 
               margin: '0',
               position:'absolute',
               top: '50%',
@@ -368,9 +336,24 @@ const ViaBeta = () => (
             }} 
           />
         </ThemeProvider>
+
       </div>
     </div>
   </div>
 );
 
 export default ViaBeta;
+
+// function phonenumber(inputtxt)
+// {
+//   var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+//   if((inputtxt.value.match(phoneno))
+//         {
+//       return true;
+//         }
+//       else
+//         {
+//         alert("message");
+//         return false;
+//         }
+// }

@@ -339,6 +339,7 @@ const SimpleForm = () => (
             hideUserAvatar='true'
             hideBotAvatar='true'
             width='850px'
+            enableMobileAutoFocus='true'
             steps={steps}
             bubbleStyle={{
 
