@@ -507,16 +507,15 @@ const ViaBeta = () => (
             }}
 
             floating={true}
-        floatingStyle={{
-            left: 'calc(50% - 28px)',
-            right: 'initial',
-            transformOrigin: 'bottom center',
-            borderRadius: 30,
-            width:'15em'
-          }}
-          style={{
-            left: 'calc(50% - 85px)',
-          }}
+            floatingStyle={{
+              left: 'calc(50% - 28px)',
+              right: 'initial',
+              transformOrigin: 'bottom center',
+              borderRadius: 30
+            }}
+          // style={{
+          //   left: 'calc(50% - 175px)',
+          // }}
 
             // floatingStyle={{
             // Something should be here where the chatbot should be aligned in the center on all viewports
