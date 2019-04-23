@@ -23,62 +23,77 @@ class Review extends Component {
 
   componentWillMount() {
     const { steps } = this.props;
-    const { name,  phone, contact, email, timeOfContact, socialMedia, username  } = steps;
+    const { name,  contact, phone, email, timeOfContact, socialMedia, username  } = steps;
 
-    if(phone.value == null){
-     phone.value == 'not needed';
-      console.log('phone is undefinded');
+    if(phone == undefined){
+     phone == {};
     }
-    if(email== null){
-      this.setState({
-        email: 'not needed'
-      });
-      console.log('email is undefinded');
+    if(email == undefined){
+      email == {};
     }
     if(timeOfContact == null){
-      this.setState({
-        timeOfContact: 'not-needed'
-      });
+      timeOfContact == {};
     }
     if (socialMedia == null && username == null){
-      this.setState({
-        socialMedia: 'not-needed',
-        username:'not-needed'
-      });
+      socialMedia == {};
+      username == {};
     }
+
+    console.log('Checked values.');
     
-    this.setState({ name, contact, phone});
+    
+    this.setState({ name, contact, phone, email, timeOfContact, socialMedia, username});
   }
 
   render() {
     const { name, contact, phone, email, timeOfContact, socialMedia, username  } = this.state;
 
-    console.log(name.value);
-    console.log(contact.value);
-    console.log(phone.value);
-    console.log(email.value);
-    console.log(timeOfContact.value);
-    console.log(socialMedia.value);
-    console.log(username.value);
+    console.log(name);
+    console.log(contact);
+    console.log(phone);
+    console.log(email);
+    console.log(timeOfContact);
+    console.log(socialMedia);
+    console.log(username);
+
+    let returnString = '';
+    let nameString = this.state.name.value;
+    let contactString = this.state.contact.value;
+    let contactTypeString = 'not needed';
+    let tocString = 'not needed';
+    let smString = 'not needed';
+    let usernameString = 'not needed';
+
+    if (this.state.phone !== undefined){
+      contactTypeString == phone.value; 
+    } else if (this.state.email !== undefined){
+      contactTypeString == email.value;
+    }
+
+    if(timeOfContact !== undefined){
+      tocString == timeOfContact.value;
+    }
+
+    if(socialMedia !== undefined){
+      smString == socialMedia.value;
+    }
+
+    if(username !== undefined){
+      usernameString == username.value;
+    }
+
+    returnString = nameString + contactString + contactTypeString + tocString + smString + usernameString;
+      
 
     return (
       <div style={{ width: '100%'}}>
         <h3>Summary</h3>
-        <table>
-          {/* <tbody>
+        {/*<table>
+           <tbody>
             <tr>
               <td>Name:</td>
               <td>{name.value}</td>
             </tr> 
-            <tr>
-              <td>Contact by:</td>
-              <td>{contact.value}</td>
-            </tr>
-            
-            <tr>
-              <td>Contact Method</td>
-              <td>{phone.value}</td>
-            </tr>
             <tr>
               <td>Contact Method</td>
               <td>{email.value}</td>
@@ -95,8 +110,9 @@ class Review extends Component {
               <td>Contact Method</td>
               <td>{username.value}</td>
             </tr> 
-          </tbody> */}
-        </table>
+          </tbody> 
+        </table> */}
+        {returnString}
     </div>
     );
   }
@@ -489,22 +505,28 @@ const ViaBeta = () => (
               background:'#090909',
               color:'white'
             }}
-            
-            floatingStyle={{
-            //Something should be here where the chatbot should be aligned in the center on all viewports
-                      }}
+
+            floating={true}
+        floatingStyle={{
+            left: 'calc(50% - 28px)',
+            right: 'initial',
+            transformOrigin: 'bottom center',
+            borderRadius: 30,
+            width:'15em'
+          }}
+          style={{
+            left: 'calc(50% - 85px)',
+          }}
+
+            // floatingStyle={{
+            // Something should be here where the chatbot should be aligned in the center on all viewports
+            //           }}
             // floatingIcon={
             // //Something else is suppose to go here, I’m not sure what. Something that finds the id of the button being used?
             // }
 
             //style affects the actual chatbot
-            style={{ 
-              margin: '0',
-              position:'absolute',
-              top: '50%',
-              left:  '50%',
-              transform: 'translate(-50%, -50%)'
-            }} 
+             
           />
         </ThemeProvider>
 
