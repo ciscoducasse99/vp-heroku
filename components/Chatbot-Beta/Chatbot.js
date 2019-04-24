@@ -5,126 +5,7 @@
 // import "./Chatbot.scss";
 
 
-// class Review extends Component {
-//   constructor(props) {
-//     super(props);
 
-//     this.state = {
-//       name: '',
-//       zipCode:'',
-//       occupation:'TBD',
-//       contactInfo:'',
-//       email:'null',
-//       timeOfContact: '',
-//       socialMedia:'null',
-//       username:'null'
-//     };
-//   }
-
-//   componentWillMount() {
-//     const { steps } = this.props;
-//     const { name,  contact, phone, email, timeOfContact, socialMedia, username  } = steps;
-
-//     if(phone == undefined){
-//      phone == {};
-//     }
-//     if(email == undefined){
-//       email == {};
-//     }
-//     if(timeOfContact == null){
-//       timeOfContact == {};
-//     }
-//     if (socialMedia == null && username == null){
-//       socialMedia == {};
-//       username == {};
-//     }
-
-//     console.log('Checked values.');
-    
-    
-//     this.setState({ name, contact, phone, email, timeOfContact, socialMedia, username});
-//   }
-
-//   render() {
-//     const { name, contact, phone, email, timeOfContact, socialMedia, username  } = this.state;
-
-//     console.log(name);
-//     console.log(contact);
-//     console.log(phone);
-//     console.log(email);
-//     console.log(timeOfContact);
-//     console.log(socialMedia);
-//     console.log(username);
-
-//     let returnString = '';
-//     let nameString = this.state.name.value;
-//     let contactString = this.state.contact.value;
-//     let contactTypeString = 'not needed';
-//     let tocString = 'not needed';
-//     let smString = 'not needed';
-//     let usernameString = 'not needed';
-
-//     if (this.state.phone !== undefined){
-//       contactTypeString == phone.value; 
-//     } else if (this.state.email !== undefined){
-//       contactTypeString == email.value;
-//     }
-
-//     if(timeOfContact !== undefined){
-//       tocString == timeOfContact.value;
-//     }
-
-//     if(socialMedia !== undefined){
-//       smString == socialMedia.value;
-//     }
-
-//     if(username !== undefined){
-//       usernameString == username.value;
-//     }
-
-//     returnString = nameString + contactString + contactTypeString + tocString + smString + usernameString;
-      
-
-//     return (
-//       <div style={{ width: '100%'}}>
-//         <h3>Summary</h3>
-//         {/*<table>
-//            <tbody>
-//             <tr>
-//               <td>Name:</td>
-//               <td>{name.value}</td>
-//             </tr> 
-//             <tr>
-//               <td>Contact Method</td>
-//               <td>{email.value}</td>
-//             </tr>
-//             <tr>
-//               <td>Contact Method</td>
-//               <td>{timeOfContact.value}</td>
-//             </tr>
-//             <tr>
-//               <td>Contact Method</td>
-//               <td>{socialMedia.value}</td>
-//             </tr>
-//             <tr>
-//               <td>Contact Method</td>
-//               <td>{username.value}</td>
-//             </tr> 
-//           </tbody> 
-//         </table> */}
-//         {returnString}
-//     </div>
-//     );
-//   }
-// }
-
-// Review.propTypes = {
-//   steps: PropTypes.object,
-// };
-
-// Review.defaultProps = {
-//   steps: undefined,
-// };
 
 // const steps = [
 //   {
@@ -554,6 +435,127 @@ import PropTypes from 'prop-types';
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
 
+class Review extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      name: '',
+      zipCode:'',
+      occupation:'TBD',
+      contactInfo:'',
+      email:'null',
+      timeOfContact: '',
+      socialMedia:'null',
+      username:'null'
+    };
+  }
+
+  componentWillMount() {
+    const { steps } = this.props;
+    const { name,  contact, phone, email, timeOfContact, socialMedia, username  } = steps;
+
+    if(phone == undefined){
+     phone == {};
+    }
+    if(email == undefined){
+      email == {};
+    }
+    if(timeOfContact == null){
+      timeOfContact == {};
+    }
+    if (socialMedia == null && username == null){
+      socialMedia == {};
+      username == {};
+    }
+
+    console.log('Checked values.');
+    
+    
+    this.setState({ name, contact, phone, email, timeOfContact, socialMedia, username});
+  }
+
+  render() {
+    const { name, contact, phone, email, timeOfContact, socialMedia, username  } = this.state;
+
+    console.log(name);
+    console.log(contact);
+    console.log(phone);
+    console.log(email);
+    console.log(timeOfContact);
+    console.log(socialMedia);
+    console.log(username);
+
+    let returnString = '';
+    let nameString = this.state.name.value;
+    let contactString = this.state.contact.value;
+    let contactTypeString = 'not needed';
+    let tocString = 'not needed';
+    let smString = 'not needed';
+    let usernameString = 'not needed';
+
+    if (this.state.phone !== undefined){
+      contactTypeString == phone.value; 
+    } else if (this.state.email !== undefined){
+      contactTypeString == email.value;
+    }
+
+    if(timeOfContact !== undefined){
+      tocString == timeOfContact.value;
+    }
+
+    if(socialMedia !== undefined){
+      smString == socialMedia.value;
+    }
+
+    if(username !== undefined){
+      usernameString == username.value;
+    }
+
+    returnString = nameString + contactString + contactTypeString + tocString + smString + usernameString;
+      
+
+    return (
+      <div style={{ width: '100%'}}>
+        <h3>Summary</h3>
+        {/*<table>
+           <tbody>
+            <tr>
+              <td>Name:</td>
+              <td>{name.value}</td>
+            </tr> 
+            <tr>
+              <td>Contact Method</td>
+              <td>{email.value}</td>
+            </tr>
+            <tr>
+              <td>Contact Method</td>
+              <td>{timeOfContact.value}</td>
+            </tr>
+            <tr>
+              <td>Contact Method</td>
+              <td>{socialMedia.value}</td>
+            </tr>
+            <tr>
+              <td>Contact Method</td>
+              <td>{username.value}</td>
+            </tr> 
+          </tbody> 
+        </table> */}
+        {returnString}
+    </div>
+    );
+  }
+}
+
+Review.propTypes = {
+  steps: PropTypes.object,
+};
+
+Review.defaultProps = {
+  steps: undefined,
+};
+
 class LinkHandler extends Component {
   componentWillMount() {
     const { steps, triggerNextStep } = this.props;
@@ -916,7 +918,7 @@ const steps = [
   },
   {
     id:'review',
-    // component:<Review/>,
+    component:<Review/>,
     trigger:'send-component',
     asMessage:true
   },
@@ -956,7 +958,7 @@ class ViaBeta extends Component {
 
   handleEnd() {
     setTimeout(() => {
-      document.querySelector('.tutorial .rsc-header a').click();
+      document.querySelector('.via-cb .rsc-header a').click();
 
       setTimeout(() => {
         this.setState({ loading: true }, () => {
@@ -967,18 +969,27 @@ class ViaBeta extends Component {
   }
   
   render() {
-    const { loading } = this.state;
-    const mobile = window.innerWidth < 568;
-    const triggerMobile = mobile ? 'mobile-step' : 'result';
+    // const { loading } = this.state;
+    // const mobile = window.innerWidth < 578;
+    // const triggerMobile = mobile ? 'mobile-step' : 'result';
 
-    if (loading) {
-      return <span />;
-    }
+    // if (loading) {
+    //   return <span />;
+    // }
 
     return (
       <ThemeProvider theme={theme}>
       <ChatBot
-        className="tutorial"
+        className="via-cb"
+        headerTitle='Chatbot'
+        hideUserAvatar='true'
+        hideBotAvatar='true'
+        width='650px'
+        steps={steps}
+        bubbleOptionStyle={{
+          background:'#090909',
+          color:'white'
+        }}
         customStyle={{ display: 'none' }}
         hideUserAvatar={true}
         floating={true}
