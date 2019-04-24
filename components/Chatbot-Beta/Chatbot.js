@@ -916,7 +916,7 @@ const steps = [
   },
   {
     id:'review',
-    component:<Review/>,
+    // component:<Review/>,
     trigger:'send-component',
     asMessage:true
   },
