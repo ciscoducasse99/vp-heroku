@@ -480,6 +480,7 @@ const SimpleForm = () => (
             headerTitle='Via'
             hideUserAvatar='true'
             hideBotAvatar='true'
+            floating='true'
             width='850px'
             enableMobileAutoFocus='true'
             steps={steps}

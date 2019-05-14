@@ -1,439 +1,134 @@
-// import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
-// import ChatBot from 'react-simple-chatbot';
-// import { ThemeProvider } from 'styled-components';
-// import "./Chatbot.scss";
-
-
-
-
-// const steps = [
-//   {
-//     id: '1',
-//     hideInput: true,
-//     message: 'Hi!',
-//     trigger: '2',
-//   },
-//   {
-//     id: '2',
-//     hideInput: true,
-//     message: "I'm Via!",
-//     trigger: '3',
-//   },
-//   {
-//     id: '3',
-//     hideInput: true,
-//     message: 'What can I call you for now?',
-//     trigger: 'name',
-//   },
-//   {
-//     id: 'name',
-//     user: true,
-//     trigger: '4',
-//   },
-//   {
-//     id: '4',
-//     message: "Okay, {previousValue}! Do you know what my purpose is?",
-//     hideInput:true,
-//     trigger: 'viaActions',
-//   },
-//   {
-//     id: 'viaActions',
-//     hideInput:true,
-//     options: [
-//       { value: 'va1', label: 'Not a clue. Tell me more, please,', trigger: 'productReveal1' },
-//       { value: 'va2', label: "Yes! Let's get started.", trigger: 'yesFunc'},
-//     ],
-//   },
-//   {
-//     id: 'productReveal1',
-//     message: "Okay. Well...",
-//     hideInput:true,
-//     trigger: 'productReveal2'
-//   },
-//   {
-//     id: 'productReveal2',
-//     message: "I was developed to help get in touch people follow their passions and dreams.",
-//     hideInput:true,
-//     trigger: 'productReveal3'
-//   },
-//   {
-//     id: 'productReveal3',
-//     message: "Whether it's playing video games, walking dogs, painting walls, doing make-up, making songs, making movies, cooking...Doesn't matter.",
-//     hideInput:true,
-//     trigger: 'productReveal4'
-//   },
-//   {
-//     id: 'productReveal4',
-//     message: "We want to help.",
-//     hideInput:true,
-//     trigger: 'productReveal5'
-//   },
-//   {
-//     id: 'productReveal5',
-//     message: "The best way we can help people for now is to develop professional websites for those who want the help, 100% free. Interested?",
-//     hideInput:true,
-//     trigger: 'ask'
-//   },
-//   {
-//     id: 'ask',
-//     hideInput:true,
-//     options: [
-//       { value: 'yes', label: 'Yes!', trigger: 'yesFunc' },
-//       { value: 'no', label: 'No thanks', trigger: 'noFunc' },
-//     ],
-//   },
-//   {
-//     id: 'noFunc',
-//     message: "Well, okay. If you ever do want our help...for free, just come talk to me again.",
-//     hideInput:true,
-//   },
-//   {
-//     id: 'yesFunc',
-//     message: "Perfect! First off, what's your zip-code?",
-//     hideInput:true,
-//     trigger: 'zipCode'
-//   },
-//   {
-//     id: 'zipCode',
-//     user:true,
-//     validator: (value) =>{
-      
-//       const zipArray = ['01850','01851', '01852', '01853','01854'];
-//       let zipMatches = false;
-  
-//       for(let i=0; i<zipArray.length; i++){
-//         console.log('zip is checking at ' + zipArray[i]);
-
-//         if (isNaN(value)) {
-//           return 'Enter a zip-code number!';
-//         }
-
-//         if(zipArray[i] == value){
-//           console.log('it matches!')
-//           zipMatches=true;
-//           break;
-//         }
-//       }
-
-//       if (zipMatches==false){
-//         return 'We can only work in Lowell. Feel free to email us for more info!';
-//       } else{
-//         return zipMatches;
-//       }
-//     },
-//     trigger: 'occupation-dis'
-//   },
-//   {
-//     id:'occupation-dis',
-//     message:"Sounds good.",
-//     hideInput:true,
-//     trigger:'occupation-2'
-//   },
-//   {
-//     id:'occupation-2',
-//     message:'Ok. If you had the oppurtunity to do whatever you want, would you know what to do?',
-//     hideInput:true,
-//     trigger:'occupation-options'
-//   },
-//   {
-//     id:'occupation-options',
-//     hideInput:true,
-//     options:[
-//       { value: 'no-occu', label:'Not really', trigger:'no-occu'},
-//       { value: 'yes-occu', label:'Yes', trigger:'yes-occu'}
-//     ]
-//   },
-//   {
-//     id:'no-occu',
-//     message:"Aww.... I can't really do much without you knowing.",
-//     hideInput:true,
-//     trigger:'no-occu-2'
-//   },
-//   {
-//     id:'no-occu-2',
-//     message:"But if you ever think of something, you're more than welcome to come back and talk to me again.",
-//     hideInput:true,
-//     trigger:'no-occu-3'
-//   },
-//   {
-//     id:'no-occu-3',
-//     message:"We also welcome you to speak to one of our people and just try figure yourself out ..... no strings attached.",
-//     hideInput:true,
-//     trigger:'no-occu-4'
-//   },
-//   {
-//     id:'no-occu-4',
-//     message:"Interested?",
-//     hideInput:true,
-//     trigger:'no-occu-options'
-//   },
-//   {
-//     id:'no-occu-options',
-//     hideInput:true,
-//     options:[
-//       {value:'no-contact', label:"I'll pass", trigger:'noFunc'},
-//       {value:'yes-contact', label:'Sure, why not', trigger:'contact-asking'}
-//     ]
-//   },
-//   {
-//     id:'yes-occu',
-//     message:"And that would be?",
-//     trigger:'occupation'
-//   },
-//   {
-//     id:'occupation',
-//     user:true,
-//     trigger:'contact-asking'
-//   },
-//   {
-//     id:'contact-asking',
-//     message:'We can figure that out! I need a form of contact so I can get you connected to my people. What is the eastiest way of doing it for you?',
-//     hideInput:true,
-//     trigger:'contact'
-//   },
-//   {
-//     id: 'contact',
-//     hideInput:true,
-//     options: [
-//       { value: 'email', label: 'Email', trigger: 'email-validator' },
-//       { value: 'phone', label: 'Phone', trigger: 'phone-validator' }
-//     ]
-//   },
-//   { 
-//     id:'email-validator',
-//     message:"Okay, email it is. What's the best email address to contact you?",
-//     hideInput:true,
-//     trigger: "email"
-//   },
-//   { 
-//     id:'phone-validator',
-//     message:"Okay, phone it is. What's the best phone number to contact you?",
-//     hideInput:true,
-//     trigger: "phone"
-//   },
-//   {
-//     id:'email',
-//     user:true,
-//     validator: (value) =>{
-
-//       const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-//       if(value==undefined){
-//         value == 'not needed';
-//       }
-
-//       if (regex.test(value)){
-//         return true;
-//       } else {
-//         return 'Invalid phone number. Please try again.';
-//       }
-//     },
-//     trigger:'time-ask'
-//   },
-//   {
-//     id:'phone',
-//     user:true,
-//     validator:(value)=>{
-//       const regex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-
-//       if(value==undefined){
-//         value == 'not need';
-//       }
-
-//       if (regex.test(value)){
-//         return true;
-//       } else {
-//         return 'Invalid phone number. Please try again.';
-//       }
-//       if(value==undefined){
-//         value == 'not need';
-//       }
-//     },
-//     trigger:'time-ask'
-//   },
-
-
-
-
-//   {
-//     id:'time-ask',
-//     message:'Noted. We eventually need to get in touch. Is there any specific time that works best with you?',
-//     hideInput:true,
-//     trigger:'time-option'
-//   },
-//   {
-//     id:'time-option',
-//     hideInput:true,
-//     options:[
-//       { value: 'no', label: 'Nope, anytime is fine.', trigger: 'no-time' },
-//       { value: 'yes', label: 'Yes!', trigger: 'yes-time' }
-//     ],
-//   },
-//   {
-//     id:'no-time',
-//     message:"That's fine. You should hear from us soon!",
-//     trigger:'social-media-1'
-//   },
-//   {
-//     id:'yes-time',
-//     message:"That's fine. When's the best time to reach out?",
-//     trigger:'timeOfContact'
-//   },
-//   {
-//     id:'timeOfContact',
-//     user:true,
-//     trigger:'no-time'
-//   },
-//   {
-//     id:'social-media-1',
-//     message:"We're almost done here.",
-//     trigger:'social-media-2'
-//   },
-//   {
-//     id:'social-media-2',
-//     message:'We also give you the option of providing us with one of your social media pages.',
-//     trigger:'social-media-3'
-//   },
-//   {
-//     id:'social-media-3',
-//     message:'This just gives us a better idea of what style design might fit best for you. Would that interest you?',
-//     trigger:'social-media-options'
-//   },
-//   {
-//     id:'social-media-options',
-//     options:[
-//       {value:'sm-no', label:'No thanks.', trigger:'review'},
-//       {value:'sm-yes', label:'Sure', trigger:'social-media-asking'}
-//     ]
-//   },
-//   {
-//     id:'social-media-asking',
-//     message:'Ok, which outlet is preferred?',
-//     trigger:'socialMedia'
-//   },
-//   {
-//     id:'socialMedia',
-//     options:[
-//       {value:'facebook',label:'Facebook',trigger:'outlet-asking'},
-//       {value:'instagram',label:'Instagram',trigger:'outlet-asking'},
-//       {value:'twitter',label:'Twitter',trigger:'outlet-asking'},
-//       {value:'linkedin',label:'Linkedin',trigger:'outlet-asking'},
-//       {value:'pinterest',label:'Pinterest',trigger:'outlet-asking'},
-//     ]
-//   },
-//   {
-//     id:'outlet-asking',
-//     message:"What's your username on {previousValue}?",
-//     trigger:'username'
-//   },
-//   {
-//     id:'username',
-//     user:true,
-//     trigger:'username-confirmed'
-//   },
-//   {
-//     id:'username-confirmed',
-//     message:"We'll look into that!",
-//     trigger:'review'
-//   },
-//   {
-//     id:'review',
-//     component:<Review/>,
-//     trigger:'send-component',
-//     asMessage:true
-//   },
-//   {
-//     id:'send-component',
-//     message:'sending....',
-//     trigger:'end-step'
-//   },
-//   {
-//     id:'end-step',
-//     message:'The end is near.',
-//     end:true
-
-//   }
-// ];
-
-// //all available props
-// const theme = {
-//   background: '#1a1a1a',
-//   fontFamily: 'Poppins',
-//   headerBgColor: '#090909',
-//   headerFontColor: 'whitesmoke',
-//   headerFontSize: '20px',
-//   botBubbleColor: 'black',
-//   botFontColor: 'white',
-//   userBubbleColor: '#0086c5',
-//   userFontColor: 'white',
-// };
-
-// const ViaBeta = () => (
-//   <div id="Vee">
-//     <div id="chatbot-content">
-//       <div className="container">
-
-//         <ThemeProvider theme={theme}>
-//           <ChatBot
-//             headerTitle='Chatbot'
-//             hideUserAvatar='true'
-//             hideBotAvatar='true'
-//             width='650px'
-// 	          steps={steps}
-
-//             bubbleOptionStyle={{
-//               background:'#090909',
-//               color:'white'
-//             }}
-
-//             floating={true}
-//             floatingStyle={{
-//               left: 'calc(50% - 28px)',
-//               right: 'initial',
-//               transformOrigin: 'bottom center',
-//               borderRadius: 30
-//             }}
-//           // style={{
-//           //   left: 'calc(50% - 175px)',
-//           // }}
-
-//             // floatingStyle={{
-//             // Something should be here where the chatbot should be aligned in the center on all viewports
-//             //           }}
-//             // floatingIcon={
-//             // //Something else is suppose to go here, I’m not sure what. Something that finds the id of the button being used?
-//             // }
-
-//             //style affects the actual chatbot
-             
-//           />
-//         </ThemeProvider>
-
-//       </div>
-//     </div>
-//   </div>
-// );
-
-// export default ViaBeta;
-
-// // const button = (
-// //   <div>
-// //     <h1>Hello, world!</h1>
-// //     <h2>It is {new Date().toLocaleTimeString()}.</h2>
-// //   </div>
-// // );
-// // ReactDOM.render(
-// //   button,
-// //   document.getElementById('chatbot-button')
-// // );
-
-// //This might make an front end ui button open the chatbot
-
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
+
+class MessageValidator extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      message:''
+    }
+
+  }
+
+  componentWillMount() {
+    const { previousStep, triggerNextStep } = this.props;
+    const trigger = 'user-validator';
+
+    //Sets state for whatever the previousStep.value is
+    if(previousStep.value==='email'){
+      this.setState({message:'email'});
+    }else{
+      this.setState({message:'phone'});
+    }
+    
+    triggerNextStep({ value: this.state.message, trigger });
+  }
+
+  render() {
+    if(this.state.message === 'email'){
+      return 'Ok, email it is. What\'s the best email address to contact you?';
+    } else {
+      return 'Ok, phone it is. What\'s the best phone number to contact you?';
+    }
+  }
+}
+
+
+class UserValidator extends Component {
+  
+  //Component description:
+
+  //A) Component should read multiple things.
+    //1. Whether email or phone option was chosen
+    //2. Previous value of user input
+  //B) Compare whether email or phone was chosen. Depending on which value is true, run specific regEx to determine if user input is valid
+  //c) Based on completion of validation thru RegEx options, return a message to the user depending on user value
+  //D) trigger either next step, back to user input if invalid or blank
+
+  // **NOTES** //
+  //-Use state for option value
+  //-user all logic under the render function
+  //-values should ne determined before chatbot reply, meaning trigger should already be set before reply.
+
+  constructor(props){
+    super(props);
+
+    this.state = {
+      passTrigger:false
+    };
+
+    this.runEmailTester=this.runEmailTester.bind(this);
+    this.runPhoneTester=this.runPhoneTester.bind(this);
+  }
+
+  componentWillMount(){
+    const {previousStep} = this.props;
+    const userOption = this.props.steps.contact.value;
+    let pass = false;
+
+    console.log(userOption);
+    console.log(previousStep.value);
+    console.log('value of pass before checking userOption:' +pass);
+
+
+    if(userOption === 'email'){
+      pass == this.runEmailTester(previousStep.value);
+    } else {
+      pass == this.runPhoneTester(previousStep.value);
+    }
+
+    console.log('value of pass after checking userOption:' +pass);
+
+
+    if(!pass){
+      this.setState({
+        passTrigger: true
+      });
+    }
+
+    // // Goes to the next step
+    // this.props.triggerNextStep({ value: metadata.triggerNext, trigger });
+  
+  }
+
+  runEmailTester= (value) => {
+    const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    
+    console.log('runEmailTester() is being tested with the value of '+ value);
+
+    if(value !== ''){
+      if(emailRegex.test(value)){
+        return true;
+      }
+    } else {
+      return false;
+    }
+
+  }
+
+  runPhoneTester = (value) => {
+    const phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+
+    console.log('runPhoneTester() is being tested with the value of ' + value);
+
+    if(value !== ''){
+      if(phoneRegex.test(value)){
+        return true;
+      }} else {
+        return false;
+      }
+
+    }
+  
+
+  render() {
+
+    return null;
+  }
+}
 
 class Review extends Component {
   constructor(props) {
@@ -489,7 +184,7 @@ class Review extends Component {
     let returnString = '';
     let nameString = this.state.name.value;
     let contactString = this.state.contact.value;
-    let contactTypeString = 'not needed';
+    let contactTypeString = (contactString)? 'phone': 'email';
     let tocString = 'not needed';
     let smString = 'not needed';
     let usernameString = 'not needed';
@@ -499,19 +194,6 @@ class Review extends Component {
     } else if (this.state.email !== undefined){
       contactTypeString == email.value;
     }
-
-    if(timeOfContact !== undefined){
-      tocString == timeOfContact.value;
-    }
-
-    if(socialMedia !== undefined){
-      smString == socialMedia.value;
-    }
-
-    if(username !== undefined){
-      usernameString == username.value;
-    }
-
     returnString = nameString + contactString + contactTypeString + tocString + smString + usernameString;
       
 
@@ -556,36 +238,37 @@ Review.defaultProps = {
   steps: undefined,
 };
 
-class LinkHandler extends Component {
-  componentWillMount() {
-    const { steps, triggerNextStep } = this.props;
+// class LinkHandler extends Component {
+//   componentWillMount() {
+//     const { steps, triggerNextStep } = this.props;
 
-    const link = steps.option.value;
-    this.props.handleLink(link);
-    document.querySelector('.tutorial .rsc-header a').click();
-    document.querySelector(`.sub-links a[data-href="${link}"]`).click();
-    document.body.scrollTop = 0;
+//     const link = steps.option.value;
+//     this.props.handleLink(link);
+//     document.querySelector('.tutorial .rsc-header a').click();
+//     document.querySelector(`.sub-links a[data-href="${link}"]`).click();
+//     document.body.scrollTop = 0;
 
-    setTimeout(() => {
-      triggerNextStep();
-    }, 500);
-  }
+//     setTimeout(() => {
+//       triggerNextStep();
+//     }, 500);
+//   }
 
-  render() {
-    return <span />;
-  }
-}
+//   render() {
+//     return <span />;
+//   }
+// }
 
-LinkHandler.propTypes = {
-  steps: PropTypes.object,
-  triggerNextStep: PropTypes.func,
-  handleLink: PropTypes.func.isRequired,
-};
+// LinkHandler.propTypes = {
+//   steps: PropTypes.object,
+//   triggerNextStep: PropTypes.func,
+//   handleLink: PropTypes.func.isRequired,
+// };
 
-LinkHandler.defaultProps = {
-  steps: undefined,
-  triggerNextStep: undefined,
-};
+// LinkHandler.defaultProps = {
+//   steps: undefined,
+//   triggerNextStep: undefined,
+// };
+
 const steps = [
   {
     id: '1',
@@ -682,14 +365,12 @@ const steps = [
       let zipMatches = false;
   
       for(let i=0; i<zipArray.length; i++){
-        console.log('zip is checking at ' + zipArray[i]);
 
         if (isNaN(value)) {
           return 'Enter a zip-code number!';
         }
 
         if(zipArray[i] == value){
-          console.log('it matches!')
           zipMatches=true;
           break;
         }
@@ -775,65 +456,31 @@ const steps = [
     id: 'contact',
     hideInput:true,
     options: [
-      { value: 'email', label: 'Email', trigger: 'email-validator' },
-      { value: 'phone', label: 'Phone', trigger: 'phone-validator' }
-    ]
-  },
-  { 
-    id:'email-validator',
-    message:"Okay, email it is. What's the best email address to contact you?",
-    hideInput:true,
-    trigger: "email"
-  },
-  { 
-    id:'phone-validator',
-    message:"Okay, phone it is. What's the best phone number to contact you?",
-    hideInput:true,
-    trigger: "phone"
+      { value: 'email', label: 'Email', trigger: 'get-contact-message' },
+      { value: 'phone', label: 'Phone', trigger: 'get-contact-message' }
+    ],
+    metadata:{
+      triggerNext:'user-validatior'
+    }
   },
   {
-    id:'email',
-    user:true,
-    validator: (value) =>{
-
-      const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-      if(value==undefined){
-        value == 'not needed';
-      }
-
-      if (regex.test(value)){
-        return true;
-      } else {
-        return 'Invalid phone number. Please try again.';
-      }
-    },
-    trigger:'time-ask'
+    id:'get-contact-message',
+    asMessage: true,
+    component: <MessageValidator />,
+    delay: 13,
+    waitAction: true
   },
   {
-    id:'phone',
+    id:'user-validator',
     user:true,
-    validator:(value)=>{
-      const regex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-
-      if(value==undefined){
-        value == 'not need';
-      }
-
-      if (regex.test(value)){
-        return true;
-      } else {
-        return 'Invalid phone number. Please try again.';
-      }
-      if(value==undefined){
-        value == 'not need';
-      }
-    },
-    trigger:'time-ask'
+    trigger:'user_validation',
   },
-
-
-
+  {
+    id:'user_validation',
+    component:<UserValidator/>,
+    asMessage:true,
+    waitAction:true
+  },
 
   {
     id:'time-ask',
@@ -935,12 +582,12 @@ const steps = [
   }
 ];
 const theme = {
-  background: '#1a1a1a',
+  background: '#f2f2f2',
   fontFamily: 'Poppins',
   headerBgColor: '#090909',
   headerFontColor: 'whitesmoke',
   headerFontSize: '20px',
-  botBubbleColor: 'black',
+  botBubbleColor: '#002f6f',
   botFontColor: 'white',
   userBubbleColor: '#0086c5',
   userFontColor: 'white',
@@ -950,22 +597,10 @@ class ViaBeta extends Component {
     super(props);
 
     this.state = {
-      loading: false,
+      opened: false,
     };
 
-    this.handleEnd = this.handleEnd.bind(this);
-  }
-
-  handleEnd() {
-    setTimeout(() => {
-      document.querySelector('.via-cb .rsc-header a').click();
-
-      setTimeout(() => {
-        this.setState({ loading: true }, () => {
-          this.setState({ loading: false });
-        });
-      }, 500);
-    }, 2000);
+    //this.handleClick = this.handleClick.bind(this);
   }
   
   render() {
@@ -991,10 +626,8 @@ class ViaBeta extends Component {
           color:'white'
         }}
         customStyle={{ display: 'none' }}
-        hideUserAvatar={true}
         floating={true}
         handleEnd={this.handleEnd}
-        headerTitle="RSC Support"
         steps={steps}
       />
       </ThemeProvider>
@@ -1002,8 +635,8 @@ class ViaBeta extends Component {
   }
 }
 
-ViaBeta.propTypes = {
-  handleLink: PropTypes.func.isRequired,
-};
+// ViaBeta.propTypes = {
+//   handleLink: PropTypes.func.isRequired,
+// };
 
 export default ViaBeta;

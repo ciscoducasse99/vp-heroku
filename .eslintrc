@@ -21,7 +21,7 @@
     {
       "trailingComa": "es5",
       "singleQuote": "true",
-      "printWidth": 120
+      "printWidth": 121
     }
   ],
   "plugins": ["react", "prettier", "eslint-plugin-prettier"],

@@ -1,0 +1,10 @@
+Notes for via-beta.js
+
+Code should:
+[x]Tell me which option was chosen by the user, whether it was Email or Phone.
+[x]Chatbot must determine which statement to return, asking the user to enter either a phone number or email address.
+[]Check what value the user enters. If it's blank or invalid, trigger back to the user step. If not, return a specific statement.
+[] If everything passes, trigger the next step.
+
+ui:
+[]figure out a way to use the a ui button component to set the state of the Chatbot component prop 'opened' to switch. Place that button on the page so you don't have to use the icon.
