@@ -144,6 +144,7 @@ class Review extends Component {
       socialMedia:'null',
       username:'null'
     };
+    
   }
 
   componentWillMount() {
@@ -620,10 +621,15 @@ class ViaBeta extends Component {
         hideUserAvatar='true'
         hideBotAvatar='true'
         width='650px'
-        steps={steps}
+
+        bubbleStyle={{
+          background:'white',
+          color:'#121212'
+        }}
         bubbleOptionStyle={{
-          background:'#090909',
-          color:'white'
+          background:'white',
+          color:'#121212',
+          borderColor:'red'
         }}
         customStyle={{ display: 'none' }}
         floating={true}

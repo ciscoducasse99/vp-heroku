@@ -1,50 +1,48 @@
-$vp-footer-color:#0f0f0f;
+$vp-footer-color: #0f0f0f;
 
 footer {
-    width: 100%;
-    background-color: $vp-footer-color;
-    color: #ccc;
-    border-top: 2px solid #131313;
+  width: 100%;
+  background-color: $vp-footer-color;
+  color: #ccc;
+  border-top: 2px solid #131313;
 }
 
+li {
+  color: white;
+}
 
-li{
-        color:white;
-    }
+#legal {
+  font-size: 11px;
+}
 
-    #legal{
-        font-size: 11px;
-    }
+.scrollmenu {
+  height: 44px;
+  background-color: $vp-footer-color; //#080808;
+  overflow-x: scroll;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
 
-    .scrollmenu {
-        height:44px;
-        background-color:$vp-footer-color;//#080808;
-        overflow-x:scroll;
-        white-space:nowrap; 
-        -webkit-overflow-scrolling: touch;
-        -ms-overflow-style: -ms-autohiding-scrollbar;
-        
-    }
-    
-    .scrollmenu a {
-        display: inline-block;
-        color:#999;
-        text-align: center;
-        font-size: 14px;
-        padding:11px 20px;
-        text-decoration: none;
-    }
-    
-    .scrollmenu a:hover {
-        color: #ccc;
-    }
-    
-    .scrollmenu::-webkit-scrollbar{
-        display:none;
-    }
-    a{
-        color:white;
-    }
-    a:hover{
-        color:#ccc;
-    }
+.scrollmenu a {
+  display: inline-block;
+  color: #999;
+  text-align: center;
+  font-size: 14px;
+  padding: 11px 20px;
+  text-decoration: none;
+}
+
+.scrollmenu a:hover {
+  color: #ccc;
+}
+
+.scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+a {
+  color: white;
+}
+a:hover {
+  color: #ccc;
+}

@@ -1,53 +1,51 @@
-#home-main-section{
-    background-color:#121212;
-    color:white;
-    width:100%;
-    min-height:80vh;
+#home-main-section {
+  background-color: #282c34;
+  color: white;
+  width: 100%;
+  min-height: 80vh;
 
-    p{
-        font-family: 'Lato';
-        color:grey;
+  p {
+    font-family: "Lato";
+    color: grey;
+  }
+
+  #home-page-header {
+    h1 {
+      padding-top: 80px;
+      font-size: 80px;
+    }
+    #p-header {
+      font-family: "Roboto";
+      font-size: 18px;
+    }
+    #p-desc {
+      padding-bottom: 20px;
+      margin-bottom: 0;
     }
 
-    #home-page-header{
-        h1{
-            padding-top:80px;
-            font-size: 80px;
-        }
-        #p-header{
-            font-family:'Roboto';
-            font-size: 18px;
-        }
-        #p-desc{
-            padding-bottom:20px;
-            margin-bottom:0;
-        }
-
-        .btn{
-            background:white;
-            color:black;
-            height:35px;
-            font-weight: 400;
-        }
+    .btn {
+      background: white;
+      color: black;
+      height: 35px;
+      font-weight: 400;
     }
+  }
 
+  @media only screen and (max-width: 486px) {
+    #home-page-header {
+      h1 {
+        padding-top: 40px;
+        font-size: 66px;
+      }
 
-    @media only screen and (max-width: 486px) {
-        #home-page-header{
-           
-            h1{
-                padding-top:40px;
-                font-size:66px;
-            }
+      #p-header {
+        font-size: 18px;
+      }
 
-            #p-header{
-                font-size:18px;
-            }
-            
-            #p-desc{
-                font-size:14px;
-                padding-bottom:14px;
-            }
-        }
+      #p-desc {
+        font-size: 14px;
+        padding-bottom: 14px;
+      }
     }
+  }
 }
