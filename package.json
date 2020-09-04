@@ -16,7 +16,7 @@
     "isomorphic-fetch": "^2.2.1",
     "next": "^7.0.2",
     "next-images": "^1.0.3",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-simple-chatbot": "^0.3.7",
